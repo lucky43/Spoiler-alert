@@ -1,0 +1,15 @@
+Database Readme
+
+This file explains how the database system will work and how it will interact with the webpage.
+
+The mysql databases is called SpoilerAlert. Within the PHP page we will have a config page that uses this.
+
+There will be a table for Movies, Video Games, and Books.
+
+Each table will have the following collumns. 
+
+id      title           spoiler
+
+Within the php we will have the command select spoiler from ("title"). 
+
+Will update as I complete database.
