@@ -1,5 +1,4 @@
-<!--videogames.html-->
-
+<?php require_once 'config.php';?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Video games</title>
+    <title>Carousel Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -31,6 +30,9 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
+    <?php $query = "select title from movies"; ?>
+<?php $result=mysql_query($query) ?>
+<?php $array = mysql_fetch_array($result); ?>
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -43,12 +45,11 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-
-                <li><a href="#">Home</a></li>
-                <li><a href="movies.html">Movies</a></li>
-                <li><a href="tv.html">TV</a></li>
-                <li><a href='classics.html'>Classics</a></li>
-                <li class='active'><a href='videogames.html'>Video Games</a></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">Movie</a></li>
+                <li><a href="#contact">TV</a></li>
+                <li><a href='#books'>Books</a></li>
+                <li><a href='#video games'>Video Games</a></li>
             
               </ul>
             </div>
@@ -69,9 +70,8 @@
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-
-              <h1>Video Games</h1>
-              <p>This page contains Video Games spoilers</p>
+              <h1>Movies</h1>
+              <p>This page contains movie spoilers</p>
              
             </div>
           </div>
@@ -98,26 +98,20 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-
-          <img class="img-circle" src="../css/videogame.jpg" style="width: 140px; height: 140px;">
-
-          <h2>Bioshock</h2>
+          <img class="img-circle" src="../css/movie.jpg" style="width: 140px; height: 140px;">
+           <h2><a href="#"><?php echo $array[0] ?></a></h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><a class="btn btn-default" href="#" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-
-          <h2>Game 2</h2>
-
+          <h2><a href="#"><?php echo $array[0] ?></a></h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="btn btn-default" href="#" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-
-          <h2>Game 3</h2>
-
+          <h2>Movie 3</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
