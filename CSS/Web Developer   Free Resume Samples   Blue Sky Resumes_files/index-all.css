@@ -1,0 +1,1215 @@
+/*
+YUI Reset
+version:2.7.0
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset/reset-min.css">
+*/
+html{color:#000;background:#fff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}
+del,ins{text-decoration:none;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;color:#252525;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}
+legend{color:#000;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+/*
+YUI Fonts - Modified
+version:2.7.0
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/fonts/fonts-min.css">
+*/
+body{font:13px/1.231 "Lucida Grande","Lucida Sans Unicode",verdana,arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}
+select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}
+table{font-size:inherit;font:100%;}
+pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+blockquote,.alt{font-family:"Lucida Sans","Lucida Grande","Lucida Sans Unicode",verdana,arial,helvetica,clean,sans-serif;}
+blockquote cite, input, textarea{font-family:"Lucida Grande","Lucida Sans Unicode",verdana,arial,helvetica,clean,sans-serif;}
+.std{font-family:"Lucida Grande","Lucida Sans Unicode",verdana,arial,helvetica,clean,sans-serif !important;}
+/* Good practice for Firefox */
+:focus{outline:0;}
+
+/*
+Title:Blue Sky Resumes - Core
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2009.01
+*/
+/* 
+GENERAL STYLES ---------------------------- */
+html{background:#45a4de url('../img/bg-html.jpg') repeat scroll top left;}
+body{background:transparent url('../img/bg-body.jpg') repeat-x scroll top left;color:#1d2f3b;height:318px;}
+hr{display:none;}
+a{color:#f0f6f9;text-decoration:underline;}
+a:hover{text-decoration:none;}
+a img{border:none;}
+p strong,.give-style strong{font-weight:bold;}
+.give-style em{font-style:italic;}
+::-moz-selection{background-color:#DAD671;color:#144460;}
+::selection{background-color:#fff;color:#144460;}
+.lolite{position:relative;background-color:rgba(27,63,87,0.3);border-bottom:1px solid rgba(27,63,87,0.10);border-top:1px solid rgba(27,63,87,0.10);color:#252525;}
+.lolite .text{font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;color:#fff;font-size:24px !important;line-height:34px !important;text-shadow:1px 1px 0 #256D95;padding-left:42px;}
+.hilite{background-color:rgba(255,255,255,0.10);border-top:1px solid rgba(255,255,255,0.19);}
+.hilite h3{color:#ffffff;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:38.75px;text-shadow:#3b88ba 1px 1px 1px;}
+.pull{margin-left:-220px;padding-left:220px;}
+.text span{font-size:93%;line-height:1.6667em;}
+h4.btn,div.btn{margin:0 !important;padding:0 !important;background:rgba(17,55,76,0.51) !important;border:5px solid rgba(17,55,76,0) !important;-moz-border-radius:7px !important;-webkit-border-radius:7px !important;border-radius:7px !important;}
+h4.btn a,div.btn input{display:block !important;background:#f3ed87 url('../img/gr-yellow.png') repeat-x scroll center left !important;height:48px !important;line-height:52px !important;color:#144460 !important;font-size:22px !important;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif !important;text-align:center !important;text-decoration:none !important;text-shadow:#fff 1px 1px 1px !important;border-top:1px solid #fdfad5 !important;border-left:1px solid #fdfad5 !important;border-right:1px solid #c9c662 !important;border-bottom:1px solid #c9c662 !important;-moz-border-radius:5px !important;-webkit-border-radius:5px !important;border-radius:5px !important;}
+h4.btn:hover{border:5px solid rgba(17,55,76,0.51) !important;}
+h4.btn:hover a,div.btn:hover input{background:#dad671 !important;}
+h4.btn.small{font-size:16px !important;border:4px solid rgba(17,55,76,0) !important}
+h4.btn.small a{height:32px !important;line-height:32px !important;}
+.links a,a.link{text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.5);}
+.links a:hover,a.link:hover{color:#fff;border-bottom:1px solid rgba(255,255,255,0.8);}
+a.btn{position:relative;display:block;display:inline-block;padding:0 10px;background:#2578ab;height:26px;line-height:26px;font-size:85%;color:#fff;text-align:center;text-decoration:none;text-shadow:#184e70 1px 1px 2px;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+a.btn:hover{background:#145986;color:#C6EBFF;}
+a.btn span{color:#8fd7ff;}
+a.btn:hover span{color:#fff;}
+a.btn.lg{clear:both;display:block;margin-bottom:25px;margin-right:35px;padding:8px 0;}
+.btn,.btn input,.submit{cursor:pointer;}
+.btn:active{position:relative;top:1px;}
+.sup{position:relative;top:-1px;}
+.hdash{background-image:url('../img/hr-dashed.gif');background-repeat:repeat-x;background-position:top right;min-height:1px;height:auto;clear:both;}
+.hdash > .hilite{position:relative;top:1px;margin-bottom:1px;}
+.hsolid{border-top:1px solid #1e75a8;}
+.vdash{background-image:url('../img/vr-dashed.gif');background-repeat:repeat-y;background-position:top right;}
+.callout{padding-top:20px;padding-bottom:20px;}
+.callout p{padding-left:40px;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:22px;line-height:30px;color:#fff;text-shadow:#3b88ba 1px 1px 1px;}
+.cols2.vdash{background-position:381px 0;}
+
+.col1{float:left;padding:20px 10px 0 50px;width:650px;}
+.col1 strong {font-weight: bold;}
+
+.col1 > p, li {
+	padding: 10px 0 10px 0;
+	line-height: 20px;
+}
+
+.col1 > h3 {
+	font-size: 30px;
+}
+
+.col1 > ul > li {
+	list-style:square !important;
+}
+
+
+.col2{float:left;padding:0 10px 0 40px;width:315px;}
+.col2.left{padding:0 0 0 40px;width:342px;}
+.col2.right{padding:0 0 0 35px;width:314px;}
+.col2.wide{padding-right:0;width:486px;}
+.col2.narr{padding:0;width:205px;}
+.col2 .pull{margin-left:-260px;padding-left:260px;}
+.col2.right .pull{margin-left:-35px;padding-left:35px;}
+.col2.text p{margin-top:2em;}
+.col3{float:left;padding:0 2px 0 40px;width:200px;}
+img.alignleft{float:left;margin:4px 13px 4px 0;}
+img.alignright{float:right;}
+img.aligncenter{display:block;clear:both;}
+img.alignleft,img.alignright,img.aligncenter{background:#287baa;padding:5px;border:1px solid #2a688a;}
+.clear{clear:both;height:1px;}
+/* 
+WRAPPERS ---------------------------- */
+#clouds{height:145px;}
+#wrap > #sb{height:auto;min-height:100%;}
+#sb{position:absolute;top:0;margin:221px 0 0;width:222px;background:url('../img/bg-sb.png') repeat-y scroll top left;z-index:900;}
+#wrap{position:absolute;width:100%;min-width:960px;overflow:hidden;}
+#wrap > #sb{position:fixed;}
+#tab{position:absolute;width:100px;z-index:700;}
+#wrap > #tab{position:fixed;}
+#hd,#bd,#ft{clear:both;}
+#hd-bar{padding:0 0 0 220px;margin-top:-1px;height:60px;background:rgb(44,132,179);background:rgba(3,74,114,0.4);border-top:1px solid #3279a9;}
+#hd-bar-content{float:left;width:730px;}
+#bd{margin-top:40px;padding-left:218px;width:732px;}
+#ft{z-index:100;}
+#bg{display:none;position:absolute;top:0;left:0;background:#000;height:100%;width:100%;opacity:0.8;-moz-opacity:0.8;filter:alpha(opacity=80);z-index:800;}
+#phone-us,#email-us{display:none;position:fixed;top:200px;left:252px;padding:0 38px;background:#0a7fc2;color:#fff;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:79px;text-shadow:1px 1px 1px #086aa1;border:5px solid #202020;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;z-index:1000;}
+#phone-us table,#email-us table{height:125px;vertical-align:center;}
+#email-us{font-size:39px;}
+#phone-us img,#email-us img{margin-left:30px;cursor:pointer;}
+#uk{
+	position:fixed;
+	top:200px;
+	left:252px;
+	padding: 48px 0 0 35px;
+	background: url('../img/bg-uk.jpg') no-repeat scroll top left;
+	width: 647px;
+	height: 227px;
+	border:5px solid #202020;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;z-index:1000;
+}
+#uk h4 {
+	background: none !important;
+	color: #fff;
+	font-size: 43px;
+	line-height: 44px;
+	text-shadow: 1px 1px 0 #3B88BA;
+}
+#uk h5{
+	margin: 0 0 3px;
+}
+#uk img {
+	position: absolute;
+	top: 20px;
+	left: 612px;
+	cursor:pointer;
+}
+/* 
+HEADER ---------------------------- */
+#clouds{position:absolute;top:0;left:0;}
+#hd{position:relative;height:54px;border-top:1px solid #91ceed;}
+#hd .bg{position:absolute;top:0;left:0;background:#fff;height:53px;width:100%;border-bottom:1px solid #000;opacity:0.1;-moz-opacity:0.1;filter:alpha(opacity=10);}
+h1 a{position:absolute;top:10px;left:0;background:url('../img/bg-h1.png') no-repeat scroll top left;width:263px;height:211px;z-index:901;}
+#hd > h1 a{position:fixed;}
+h1 a:hover{background-position:bottom left;}
+h1 a span{position:absolute;bottom:0px;left:0;padding:0 35px 0 16px;background:url('../img/bg-logo.png') no-repeat scroll 16px 0;width:212px;height:141px;text-indent:-9999px;}
+h1 a:hover span{background-position:16px -142px;}
+h1 a:active span{height:142px;}
+.nav{padding:0 0 0 253px;}
+.nav li{position:relative;float:left;display:inline;padding:0 2.5px;height:53px;}
+.nav li.hidden{display:none;}
+.nav a{padding:7px 20px 5px;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:18px;line-height:55px;color:#fff;text-decoration:none;text-shadow:#1771aa 1px 1px 1px;}
+.nav a:hover{color:#1771aa;text-shadow:#fff 1px 1px 1px;}
+.nav li.active a{background:#0a7fc2;text-shadow:#055591 1px 1px 1px;color:#fff;border-radius:15px;-moz-border-radius:15px;-webkit-border-radius:15px;}
+.nav li.active a:hover{background:#1771aa;}
+.nav a:active{position:relative;top:1px;}
+#hd-bar-content table{float:left;margin-left:40px;}
+#hd-bar-content table td{height:60px;color:#fff;font-size:12px;text-shadow:1px 1px 0 #256D95;vertical-align:center;}
+#hd-bar-content table td a{color:#fff;text-decoration:none;}
+#bd h2,#bd h3{font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;}
+#bd h2{margin-left:40px;color:#0e3143;font-size:24px;line-height:1.1em;}
+h2 strong{display:block;color:#252525;font-family:"ITCLubalinGraphDemi",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;}
+/* 
+MAIN SIDEBAR ---------------------------- */
+#sb a{color:#1771aa;}
+.sub-nav h4{display:none;}
+.sub-nav a{text-decoration:none;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;}
+.sub-nav a span,.sub-nav .set1 li.item2 a,.sub-nav .set1 li.item3 a{color:#252525;}
+.sub-nav .set1{margin:0 0 19px 11px;padding:5px 7px;background:#e6ebee;width:178px;border-top:1px solid #d9e0e7;border-right:1px solid #e6ebee;border-bottom:1px solid #e6ebee;border-left:1px solid #d9e0e7;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.sub-nav .set1 li{float:left;display:inline;text-align:center;width:89px;}
+.sub-nav .set1 li:first-child{margin:0 0 5px;width:178px;}
+.sub-nav .set1 a,.sub-nav .set2 li{display:block;background-color:#f0f6f9;border-right:1px solid #caced1;border-left:1px solid #fff;border-top:1px solid #fff;border-bottom:1px solid #caced1;}
+.sub-nav .set1 li.item2 a{border-right:1px solid #e6ebee;}
+.sub-nav .set1 li:first-child a,.sub-nav .set1 li.item2 a{border-top-left-radius:4px;-moz-border-radius-topleft:4px;-webkit-border-top-left-radius:4px;border-bottom-left-radius:4px;-moz-border-radius-bottomleft:4px;-webkit-border-bottom-left-radius:4px;}
+.sub-nav .set1 li:first-child a,.sub-nav .set1 li.item3 a{border-top-right-radius:4px;-moz-border-radius-topright:4px;-webkit-border-top-right-radius:4px;border-bottom-right-radius:4px;-moz-border-radius-bottomright:4px;-webkit-border-bottom-right-radius:4px;}
+.sub-nav .set1 a{font-size:16px;height:40px;line-height:40px;}
+.sub-nav .set1 a:hover,.sub-nav .set2 li:hover{background-color:#fff;}
+.sub-nav .set1 a:active{position:relative;top:1px;}
+.sub-nav .set1 a span{font-size:14px;height:36px;line-height:36px;}
+.sub-nav .set2{padding:19px 0 25px 11px;background:#e6ebee;width:207px;border-top:1px solid #d9e0e7;}
+.sub-nav .set2 li{position:relative;width:194px;height:53px;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
+.sub-nav .set2 li a{display:block;position:absolute;background:url('../img/sp-subnav-set.png') no-repeat scroll top left;width:195px;text-indent:-9999px;}
+.sub-nav .set2 li:first-child{margin:0 0 12px;}
+.sub-nav .set2 li.item2{margin:0 0 13px;}
+.sub-nav .set2 li.item1 a{top:-15px;left:8px;height:69px;}
+.sub-nav .set2 li.item1 a:hover{background-position:-195px 0;}
+.sub-nav .set2 li.item2 a{top:-12px;left:10px;background-position:0 -71px;height:65px;}
+.sub-nav .set2 li.item2 a:hover{background-position:-195px -71px;}
+.sub-nav .set2 li.item3 a{top:-13px;left:11px;background-position:0 -138px;height:66px;}
+.sub-nav .set2 li.item3 a:hover{background-position:-195px -138px;}
+.sub-nav .set2 li:active{top:1px;}
+.sub-nav .set3 li a{display:block;padding-right:20px;background:url('../img/bg-tab.jpg') no-repeat scroll top left;width:200px;height:58px;font-size:10px;text-transform:uppercase;text-align:right;letter-spacing:1px;line-height:58px;}
+.sub-nav .set3 li a:hover{background-position:0 -58px;}
+.sub-nav .set3 li a:active{padding-right:21px;background-position:0 -116px;width:199px;}
+.sub-nav .set3 a em{font-size:7px;line-height:inherit;}
+.sub-nav .set3 a strong{border-bottom:1px solid rgba(23,113,170,0.5);}
+.sub-nav .set3 a:hover strong{border:0;}
+/* 
+BLOG TAB ---------------------------- */
+#tab{top:0;right:0;height:100%;}
+#tab .top,#tab .bottom{background:url('../img/bg-blog-tab-shad.png') repeat-y scroll top left;background-color:rgba(3,74,114,0.3);height:30px;border-left:1px solid rgba(0,47,96,0.2);}
+#tab .bottom{height:100%;}
+#tab .tab{background-color:rgba(3,74,114,0.3);}
+#tab .tab a{display:block;position:relative;left:-135px;background:url('../img/bg-blog-tab.png') no-repeat scroll top left;width:135px;height:80px;text-indent:-9999px;cursor:pointer;}
+#tab .tab a:hover{top:-1px;}
+/* 
+WIDE COLUMN ---------------------------- */
+.wide h4,h4.icon{position:relative;background:url('../img/hr-dashed.gif') repeat-x -3px bottom;display:block;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:22px;margin-bottom:26px;margin-right:35px;padding-bottom:6px;}
+.wide > p{margin:0 40px 2em 0;line-height:20px;}
+.wide h5{font-size:16px;font-weight:800;}
+.wide > ol li p,.wide > ul li p,
+.wide > ol li li,.wide > ul li li{margin-bottom:1em;font-size:13px;line-height:21px;}
+.wide > ol > li,.wide > ul > li{display:block;margin-bottom:24px;margin-right:35px;}
+.wide > ol > li ol,.wide > ul > li ol,
+.wide > ol > li ul,.wide > ul > li ul{margin:2em 0;}
+.wide > ol li li,.wide > ul li li{margin-left:15px;padding-left:5px;list-style:disc outside;}
+h4.icon{margin-left:85px;margin-bottom:15px;}
+.wide h4 small{display:block;clear:both;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:17px;line-height:20px;color:#144460;}
+h4.icon span{position:absolute;top:-20px;left:-85px;background:url('../img/sp-icons.png') no-repeat scroll top left;}
+h4.heart span{background-position:top left;width:82px;height:71px;}
+h4.head,h4.book{margin-top:50px;}
+h4.head span{background-position:-82px 0;width:79px;height:71px;top:-34px;}
+h4.book span{background-position:-161px 0;width:82px;height:79px;top:-34px;}
+h4.tie span,h4.tie-plus span{background-position:-243px 0;width:69px;height:78px;}
+h4.tie-plus span{background-position:0 -100px;}
+h4.pad span{background-position:-312px 0;width:69px;height:68px;}
+h4.thumb span{background-position:-243px -78px;width:68px;height:81px;}
+h4.keys span{background-position:-311px -78px;width:67px;height:67px;}
+.hilite.bio{margin-top:1px;padding-top:30px;padding-bottom:30px;padding-right:40px;}
+.hilite.bio h3{margin-bottom:10px;font-size:24px;}
+.hilite.bio p{color:#fff;line-height:21px;text-shadow:1px 1px 1px #3B88BA;}
+.simple-list li{display:list-item !important;margin:0 35px 1em 15px !important;list-style:disc outside;}
+.simple-list.col2{float:left;padding:0;width:242px;}
+/* 
+ENTRIES ---------------------------- */
+.entry{margin:0 0 39px;}
+#bd h2.entry-title{margin:0;padding:0 0 15px;color:#fff;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:32px;line-height:1.125em;text-shadow:1px 1px 1px #367EAD; font-weight: bold;}
+#bd h2.entry-title a{color:#f9f5a4;text-decoration:none;}
+#bd h2.entry-title a:hover{color:#fff;}
+.entry .post{margin:0 0 1.5em;}
+.entry .meta{position:relative;}
+.entry .meta .date,.entry .meta .author,
+.entry .meta .comments,.entry .meta .tw{position:absolute;top:5px;left:545px;width:139px;}
+.entry .meta .date{top:-48px;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:29.14px;color:#252525;}
+.entry .meta .date span{font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;color:#346b8b;}
+.entry .meta .author,.twitter .via{font-size:85.71428571%;font-style:italic;font-weight:bold;line-height:2em;}
+.entry .meta .author span,.twitter .via span{display:block;font-style:normal;font-weight:normal;font-size:91.66666667%;text-decoration:none;}
+.entry .meta .author span a,.twitter .via span a,
+.entry-list .author a,.entry-list .comments a{color:#8fd7ff;text-decoration:none;text-shadow:1px 1px 1px rgba(0,0,0,0.2);}
+.entry .meta .author span a:hover,.twitter .via span a:hover,
+.entry-list .author a:hover,.entry-list .comments a:hover{color:#fff;}
+.entry .meta .comments a,.entry .meta .tw a{display:block;position:relative;padding:6px 10px;background:#2578ab;width:89px;color:#8fd7ff;text-decoration:none;text-shadow:1px 1px 1px #184E70;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.entry .meta .comments a:hover,.entry .meta .tw a:hover{background:#145986;color:#fff;}
+.entry .meta .comments{top:75px;font-size:78.57142857%;}
+.entry .meta .comments span{position:absolute;top:-11px;left:70px;padding:7px 0 0;color:#2b4252;background:url('../img/bg-comment-count.png') no-repeat scroll top left;width:34px;height:23px;text-align:center;text-shadow:0 0 1px #fff;}
+.entry .meta .tw{top:110px;font-size:78.57142857%;}
+.entry .meta .tw span{display:block;position:absolute;top:2px;left:78px;background:url('../img/sp-social.png') no-repeat scroll top left;height:20px;width:20px;box-shadow:1px 1px 1px #216B99;-moz-box-shadow:1px 1px 1px #216B99;-webkit-box-shadow:1px 1px 1px #216B99;}
+.entry .post > p{margin:0 0 2em;font-size:13px;line-height:24px;}
+.entry .post > p strong{font-weight:bold;}
+.entry .post > p em{font-style:italic;}
+#bd .entry .post h2{margin:26px 0 10px;padding:0 0 8px;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:22px;line-height:20px;background:transparent url('../img/hr-dashed.gif') repeat-x bottom right;}
+#bd .entry .post h3{margin:26px 0 0;font-family:"Lucida Grande","Lucida Sans Unicode",verdana,arial,helvetica,clean,sans-serif;font-size:123.1%;font-weight:bold;line-height:1.5em;letter-spacing:-1px;}
+.entry .post ul,.entry .post ol{margin:26px 0 0;}
+.entry .post ul li{margin:0 0 1em 17px;padding:0 0 0 5px;line-height:24px;list-style:disc outside;}
+.entry .post ol li{margin:0 0 1em 22px;line-height:24px;list-style:decimal outside;}
+.entry .post blockquote{margin:0 13px 24px 30px;color:#fff;font-family:"Lucida Sans","Lucida Grande","Lucida Sans Unicode",verdana,arial,helvetica,clean,sans-serif;font-style:italic;line-height:1.8461538462em;}
+.entry .post blockquote p{margin:0 0 1em;}
+.entry .post img{max-width:486px;}
+.entry .more,.entry .more-link{float:left;margin-top:2em;padding:6px 10px;background:#f9f5a4;color:#144460;font-size:85%;font-weight:bold;line-height:1.231em;text-decoration:none;text-shadow:0 0 3px #fff;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.entry .more:hover,.entry .more-link:hover{background:#fff;}
+/* 
+NARROW COLUMN ---------------------------- */
+.narr .shadow{position:relative;top:-1px;left:-1px;padding:1px 0 0 1px;background:transparent url('../img/bg-corner-shad.png') no-repeat scroll -1px 0;min-height:245px;}
+.narr .tab{margin:20px 0;padding:8px 0 8px 28px;background:#2578ab url('../img/bg-corner-shad.png') no-repeat scroll -10px 0;color:#fff;font-size:11px;line-height:14px;text-shadow:1px 1px 0 #256D95;border-top-right-radius:5px;-moz-border-radius-topright:5px;-webkit-border-top-right-radius:5px;border-bottom-right-radius:5px;-moz-border-radius-bottomright:5px;-webkit-border-bottom-right-radius:5px;}
+.narr .tab a{color:#8fd7ff;text-decoration:none;}
+.narr a.btn{display:block;margin:20px 0;padding:8px 0 8px 28px;background-image:url('../img/bg-corner-shad.png');background-position:-10px 0;background-repeat:no-repeat;height:auto;line-height:14px;text-align:left;border-top-left-radius:0;-moz-border-radius-topleft:0;-webkit-border-top-left-radius:0;border-bottom-left-radius:0;-moz-border-radius-bottomleft:0;-webkit-border-bottom-left-radius:0;}
+.narr blockquote,.narr .blurb{padding-left:28px;}
+.narr .blurb{width:155px;}
+.narr h5{color:#144460;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:18px;line-height:24px;padding-bottom:12px;width:130px;}
+.narr blockquote cite{color:#252525;display:block;font-size:11px;font-weight:800;padding-bottom:16px;}
+.narr p{padding:0 0 2em;color:#14222b;font-size:12px;line-height:20px;}
+.narr blockquote p{color:#1d2f3b;font-style:italic;padding-bottom:30px;}
+#get-quote{background:url('../img/bg-corner-shad-short.png') no-repeat 0 0;margin-bottom:38px;margin-left:-1px;padding-left:1px;}
+#get-quote h4.btn,
+#get-quote h4.btn a{border-left:none !important;-moz-border-radius-topleft:0 !important;-webkit-border-top-left-radius:0 !important;border-top-left-radius:0 !important;-moz-border-radius-bottomleft:0 !important;-webkit-border-bottom-left-radius:0 !important;border-bottom-left-radius:0 !important;}
+#get-quote h4.btn{background-image:url('../img/bg-getquote-brdr.png') !important;background-position:0 0 !important;background-repeat:no-repeat !important;margin:23px 0 24px !important;}
+#get-quote h4.btn a{background-image:url('../img/btn-h4btn-shadow.png') !important;background-position:0 0 !important;background-repeat:no-repeat !important;border-top:none !important;font-size:31px !important;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif !important;height:69px !important;line-height:77px !important; font-weight: bold;}
+#get-quote.two-line h4.btn a{padding-top:15px !important;padding-left:20px !important;height:54px !important;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif !important;font-size:21px !important;text-align:left !important;line-height:21px !important;}
+#get-quote.two-line h4.btn a span{display:block;font-size:18px !important;}
+#get-quote.two-line h4.btn a span span{display:inline;font-family:"Lucida Grande","Lucida Sans Unicode",verdana,arial,helvetica,clean,sans-serif;}
+/* 
+TWO COLUMNS 50/50 ---------------------------- */
+.entry-list{padding:0 30px 35px 0;}
+.entry-list h4{margin:30px 0 5px;}
+.entry-list h4 a{font-size:108%;font-weight:bold;color:#f9f5a4;line-height:1.4285714286em;text-decoration:none;text-shadow:1px 1px 1px #367EAD;}
+.entry-list h4 a:hover{color:#fff;}
+.entry-list p{font-size:12px;line-height:16px;margin-bottom:8px;}
+.twitter .date,.twitter-timestamp,
+.twitter .via,
+.entry-list .date,
+.entry-list .author,
+.entry-list .comments{float:left;position:static;width:auto;line-height:20px;}
+.entry-list .date,.twitter .date,.twitter-timestamp{padding:0 10px 0 0;font-size:77%;border-right:1px solid #387fab;}
+.entry-list .author,.twitter .via{position:relative;left:0;padding:0 10px;font-size:77%;font-weight:normal;border-right:1px solid #387fab;}
+.entry-list .comments{font-size:77%;}
+.entry-list .author span,.twitter .via span{display:inline-block;padding:0 0 0 3px;font-size:110%;}
+.entry-list .comments{padding:0 0 0 28px;background:url('../img/bg-comment-cloud-sm.png') no-repeat scroll 10px 4px;}
+body.blog .categories,.resource-list{padding:15px 0 30px 0;}
+.categories li,.resource-list li{padding:10px 0;margin-right:15px;font-size:93%;font-weight:bold;}
+.categories a,.resource-list a,.archives-list a{color:#a6dfff;text-shadow:1px 1px 1px rgba(0,0,0,0.2);text-decoration:none;}
+.categories a:hover,.resource-list a:hover,.archives-list a:hover{color:#fff;}
+.resource-list{padding-bottom:35px;}
+.resource-list li{line-height:1.4545454545em;}
+.resource-list p{display:block;color:#144460;font-size:11px !important;font-weight:normal;line-height:inherit !important;}
+.resource-list li span{font-weight:normal;}
+/* 
+SHARED ---------------------------- */
+body.blog #bd .col2 h5,body.article #bd .col2 h5,h5.sub-title{margin-top:35px;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;text-transform:uppercase;font-size:16px;font-weight:normal !important;}
+body.samples-land .col3 h6,body.executive .resume-list h6,
+body.samples-land .col3 li,body.executive .resume-list li{margin-bottom:10px;}
+body.samples-land .col3 a,body.executive .resume-list a{color:rgb(198,235,255);font-size:12px;font-weight:800;margin:10px 0;padding-right:18px;text-decoration:none;text-shadow:#3b88ba 1px 1px 1px;}
+body.samples-land .col3 a:hover,body.executive .resume-list li a:hover{background:url('../img/bg-mag-sm.png') no-repeat right center;color:rgb(255,255,255);}
+body.samples-land .col3 h6,body.executive .resume-list h6{background:url('../img/hr-dashed.gif') repeat-x scroll right bottom;display:block;padding-bottom:8px;}
+body.samples-land .col3 h6 a,body.executive .resume-list h6 a{color:#f9f5a4;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:174%;margin-bottom:10px;padding-right:0; font-weight: normal;}
+body.samples-land .col3 h6 a:hover,body.executive h6 a:hover{color:#fff;}
+/* 
+FOOTER ---------------------------- */
+#pre-footer{padding:30px 0 0 218px;width:732px;}
+#pre-footer p{padding:0 20px 40px 40px;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:24px;line-height:34px;color:#fff;text-shadow:#3b88ba 1px 1px 1px;}
+#ft{margin-top:47px;padding-top:10px;padding-left:218px;border-top:1px solid #11699c;}
+#ft .wrap{margin:0 0 0 40px;padding:20px 0 30px;width:692px;}
+#ft .hsolid{width:658px;}
+#ft ul{display:inline-block;float:left;width:138px;}
+#ft li a{font-size:77%;color:#e7e7e7;line-height:1.4545454545em;text-decoration:none;}
+#ft a strong{font-weight:bold;line-height:31px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.5);}
+#ft li a:hover{color:#fff;border-bottom:1px solid rgba(255,255,255,0.8);}
+#ft a:hover strong{border-bottom:1px solid rgba(255,255,255,0.8);}
+#ft li.btn{margin:1px 0 2px;width:225px;}
+#ft li.btn a{display:block;background:#3b92d1;height:27px;color:#fff;line-height:27px;text-align:center;text-decoration:none;text-shadow:#2a749e 1px 1px 1px;border-top:1px solid #4396d3;border-left:1px solid #4396d3;border-right:1px solid #2a709d;border-bottom:1px solid #2a709d;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+#ft li.btn a:hover{background:#4396d3;}
+/* 
+SOCIAL ---------------------------- */
+ul.social{float:right;padding:20px 0 20px 4px;border-left:1px solid #2b70a2;}
+ul.social li{float:left;}
+ul.social li span{display:block;margin-right:19px;margin-left:22px;}
+ul.social li a{display:block;margin-left:9px;background:url('../img/sp-social.png') no-repeat scroll top left;height:20px;width:20px;text-indent:-9999px;}
+ul.social li a:hover{box-shadow:0 0 2px #fff;-moz-box-shadow:0 0 2px #fff;-webkit-box-shadow:0 0 2px #fff;}
+ul.social li.fb a{background-position:-20px 0;}
+ul.social li.lnkd a{background-position:-40px 0;}
+ul.social li.rss a{background-position:-60px 0;}
+.fb-like.box{padding:7px 7px 7px 10px;background:#287baa;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px; z-index: 2000; position: relative;}
+
+/* 
+FORMS ---------------------------- */
+input,textarea{border:0;}
+form .box{padding:5px 7px 5px 5px;background:#287baa;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;}
+form .textbox,form .textarea{background: transparent url("../img/bg-input-std-left.png") no-repeat scroll right top;width:100%;border:1px solid #2676a2;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;}
+form .textbox.first{float:left;width:232px;}
+form .textbox.last{float:left;position:relative;left:5px;width:233px;}
+.textbox input,.textarea textarea{display:block;padding:7px 0 7px 9px;background:url('../img/bg-input-std-left.png') no-repeat scroll top right;width:96%;height:18px;font-size:12px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;}
+.textarea textarea{padding:9px;width:454px;height:144px;text-indent:0;}
+form .submit{position:relative;padding:0 8px;background:#f3ed87 url('../img/gr-yellow.png') repeat-x scroll top left;height:32px;color:#144460;font-size:11px;font-weight:bold;text-align:center;text-decoration:none;text-shadow:#fff 1px 1px 1px;text-transform:uppercase;border-top:1px solid #fdfad5;border-left:1px solid #fdfad5;border-right:1px solid #c9c662;border-bottom:1px solid #c9c662;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;box-shadow:1px 1px 2px #3B88BA;-moz-box-shadow:1px 1px 2px #3B88BA;-webkit-box-shadow:1px 1px 2px #3B88BA;}
+form .submit:hover{background:#dad671;}
+form .submit:active{border-top:1px solid #c9c662;border-left:1px solid #c9c662;border-right:1px solid #fdfad5;border-bottom:1px solid #fdfad5;}
+form#quiz ol li,
+form#quiz h5{color:#252525;font-size:16px;font-weight:800;}
+form#quiz ol li{padding:40px 0 5px;}
+form#quiz h5{position:relative;letter-spacing:-0.1em;line-height:1.54em;padding-bottom:26px;}
+form#quiz h5 span{display:block;position:absolute;left:-40px;text-align:right;width:30px;}
+form#quiz ol li li{display:block;list-style:none;padding:4px 0;}
+form#quiz label{color:#ffffff;cursor:pointer;font-size:15px;font-weight:100;line-height:36px;padding-left:13px;text-shadow:#3985b6 1px 1px 0;white-space:normal;width:280px;height:36px;}
+form#quote{width:732px;}
+form#quote fieldset{margin-left:-218px;padding:27px 0 27px 218px;background:url('../img/hr-dashed.gif') repeat-x scroll bottom right;width:732px;}
+form#quote h5{margin-bottom:1em;font-size:16px;font-weight:bold;line-height:21px;}
+form#quote p{margin-bottom:1em;font-size:14px;line-height:21px;}
+form#quote .legend{float:left;margin:2px 0 0;padding:0 26px 0 42px;width:180px;}
+form#quote .legend h4{margin-bottom:1.5em;color:#252525;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:22px;line-height:24px;}
+form#quote .legend p{font-size:13px;line-height:18px;}
+form#quote .inputs{float:left;width:484px;}
+form#quote .box,form#comment .box{margin:4px 0;}
+form .textbox,form .textarea{position:relative;}
+form .textbox .required,form .textarea .required{display:block;position:absolute;right:15px;top:10px;color:#8c8c8c;font-size:11px;text-transform:uppercase;}
+.box label{display:block;margin:5px 0 10px;padding:0 0 0 10px;color:#fff;line-height:1.6em;}
+.box.checkbank label{margin-bottom:5px;}
+.textbox label{display:none;}
+form#quote .box.upload{position:relative;margin-top:25px;margin-bottom:45px;}
+form#quote .box.checkbank{position:relative;margin-bottom:10px}
+form#quote .box.upload label,form#quote .box.checkbank label{position:relative;padding-left:42px;}
+form#quote .box.upload label{display:block;margin-top:10px;margin-bottom:-10px;line-height:1.6em;}
+form#quote .box.upload .sprite,form#quote .box.checkbank .sprite{position:absolute;top:-3px;left:10px;background:url('../img/sp-icons.png') no-repeat scroll -243px -159px;width:19px;height:21px;}
+form#quote .box.checkbank .sprite{top:-1px;background-position:-262px -159px;width:22px;height:18px;}
+form#quote .box.upload .arrow,form#quote .box.checkbank .arrow{border-bottom:20px solid transparent;border-right:16px solid #287BAA;display:block;height:0;left:18px;position:absolute;bottom:-20px;width:0;}
+form#quote .checkbox,form#quote .radio{padding:3px 0;color:#fff;font-size:15px;line-height:12px;text-shadow:1px 1px 1px #3B88BA;}
+form#quote .checkbox{margin-left:47px;clear:both;}
+form#quote .radio.left{float:left;width:245px;}
+form#quote .checkbox span,form#quote .radio span{cursor:pointer;}
+form#quote .checkbox label,form#quote .radio label{margin-left:12px;line-height:36px;cursor:pointer;}
+form#quote div.btn{width:307px;}
+form#quote div.btn input{width:100%;height:68px !important;font-size:31px !important;line-height:68px !important;}
+form#quote #email-confirm {display: none;}
+#upload-resumeUploader{position:absolute;bottom:-45px;left:47px;background:#f3ed87 url('../img/gr-yellow.png') repeat-x scroll top left;border-top:1px solid #fdfad5;border-left:1px solid #fdfad5;border-right:1px solid #c9c662;border-bottom:1px solid #c9c662;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;box-shadow:1px 1px 2px #3B88BA;-moz-box-shadow:1px 1px 2px #3B88BA;-webkit-box-shadow:1px 1px 2px #3B88BA;z-index:55;}
+.uploadifyQueue{position:relative;margin-bottom:20px;top:17px;left:42px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.uploadifyQueueItem{position:relative;margin-bottom:4px;padding:0 10px;width:409px;color:#fff;font-size:13px;line-height:30px;}
+.uploadifyError{position:relative;z-index:50;color:#252525;}
+.uploadifyError .uploadifyProgress{background:#F9F5A4;}
+.uploadifyError .uploadifyProgressBar{display:none;}
+.uploadifyQueueItem .cancel{position:absolute;top:3px;right:10px;z-index:52;}
+.uploadifyQueueItem .fileName{position:relative;z-index:50;height:30px;}
+.uploadifyQueueItem .percentage{position:relative;z-index:50;}
+.uploadifyProgress{position:absolute;top:0;left:0;height:30px;background-color:#00618B;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;width:100%;z-index:48;}
+.uploadifyProgressBar{background-color:#1b6a96;width:1px;height:30px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.ui-helper-hidden-accessible{left:-999em;position:absolute;}
+span.ui-checkbox,span.ui-radio{float:left;display:block;background:url('../img/sp-checkradio.png') no-repeat scroll top left;width:35px;height:36px;cursor:pointer;}
+span.ui-radio{background-position:0 -72px;}
+span.ui-checkbox-state-checked,span.ui-checkbox-state-checked-hover{background-position:0 -36px;}
+span.ui-radio-state-checked,span.ui-radio-state-checked-hover{background-position:bottom left;}
+label.ui-checkbox-state-checked,label.ui-checkbox-state-checked-hover,
+label.ui-radio-state-checked,label.ui-radio-state-checked-hover{color:#252525 !important;}
+.errors .inputs{padding:20px;background:#F9F5A4;width:440px !important;border:2px solid #fda716;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.box.error{background:#F9F5A4;}
+.box.error .textbox,.box.error .textarea{border-color:#fda716;}
+/* 
+FLOAT CLEARING ---------------------------- */
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clearfix{display:inline-block;}
+/* start commented backslash hack \*/
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+/* close commented backslash hack */
+
+
+/*
+Title:Blue Sky Resumes - Error
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.01
+*/
+body.error404 h2{position:relative;margin-bottom:10px;}
+body.error404 h2 strong{font-size:80px;line-height:1.2em;}
+body.error404 #bd .lolite{position:relative;padding:24px 180px 24px 218px;}
+body.error404 .lolite .art{bottom:-39px;position:absolute;right:-34px;}
+body.error404 #pre-footer{display:none;}
+
+/*
+Title:Blue Sky Resumes - About
+Author:Matt Bainton,http://inlikealion.com
+Version:2010.01
+*/
+body.about #bd{margin-top:55px;}
+body.about #bd h2{margin-left:40px;color:#0e3143;font-size:24px;}
+body.about #bd h2 strong{display:block;color:#252525;font-size:99px;letter-spacing:-1px;line-height:105px;text-indent:-6px;}
+
+/*
+Title:Blue Sky Resumes - About Us
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.01
+*/
+body.about-us h2{position:relative;margin-bottom:10px;z-index:10;}
+body.about-us h2 strong span{color:#0683cb;text-shadow:1px 1px 1px #fff;}
+body.about-us #bd .lolite{position:relative;margin-bottom:44px;padding:24px 100px 24px 218px;z-index:5;}
+body.about-us #bd .lolite img.art{position:absolute;bottom:-10px;right:-120px;}
+body.about-us .hilite{padding:32px 22px 32px 258px;}
+body.about-us .narr .shadow{min-height:271px;}
+body.about-us .col2.wide{padding-bottom:30px;}
+body.about-us .col2 .hdash.pull{margin-top:50px;}
+body.about-us .cols2.hdash .narr blockquote{margin-top:50px;}
+body.about-us .cols2.bios{position:relative;}
+body.about-us .cols2.louisefletcher .wide{padding-top:45px;}
+body.about-us .cols2.bios .wide{padding-bottom:21px;padding-left:149px;width:378px;min-height:298px;}
+body.about-us .cols2.bios .peekaboo{width:87px;position:absolute;top:250px;left:220px;height:1px;}
+body.about-us .cols2.bios .peekaboo span{position:absolute;bottom:1px;left:-26px;display:block;background:url('../img/sp-peekaboo.jpg') no-repeat scroll top left;width:149px;z-index:901;}
+body.about-us .cols2.louisefletcher .peekaboo{top:235px;}
+body.about-us .cols2.louisefletcher .peekaboo span{height:187px;}
+body.about-us .cols2.philfletcher .peekaboo{top:234px;}
+body.about-us .cols2.philfletcher .peekaboo span{background-position:0 -194px;height:252px;}
+body.about-us .cols2.krisniklawski .peekaboo{top:209px;}
+body.about-us .cols2.krisniklawski .peekaboo span{background-position:0 -447px;height:210px;}
+body.about-us .cols2.lisahanna .peekaboo{top:245px;}
+body.about-us .cols2.lisahanna .peekaboo span{background-position:0 -659px;height:248px;}
+body.about-us .cols2.barbarasafani .peekaboo{top:221px;}
+body.about-us .cols2.barbarasafani .peekaboo span{background-position:0 -909px;height:220px;}
+body.about-us .cols2.bios .sub-title{margin-bottom:.75em;padding-bottom:.75em;background-position:-3px bottom;}
+body.about-us .cols2.bios .narr{margin-top:48px;}
+body.about-us .cols2.louisefletcher .narr{margin-top:94px;}
+
+/*
+Title:Blue Sky Resumes - Article
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2009.12
+*/
+body.article .entry .meta .tw{top:60px;}
+body.article .narr .shadow{padding-top:25px;top:0;}
+body.article .hilite.free{padding-top:10px;padding-bottom:30px;position:relative;color:#fff;}
+body.article .hilite.free h3{margin-left:300px;margin-bottom:10px;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif !important;font-size:74px;line-height:1em;text-indent:-5px;}
+body.article .hilite.free p{margin-left:300px;padding-right:50px;font-size:14px;line-height:24px;}
+body.article .hilite.free p a{font-weight:bold;}
+body.article .hilite.free .art{position:absolute;left:220px;bottom:0;}
+
+/*
+Title:Blue Sky Resumes - Blog
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2009.12
+*/
+body.blog #hd-bar h3{float:left;background:url('../img/bg-blog-bar.png') no-repeat scroll top left;width:132px;height:61px;text-indent:-9999px;}
+body.blog #hd-bar h3 a{display:block;height:60px;}
+#blog-search{float:left;padding:12px 0 14px 28px;}
+#blog-search .textbox{float:left;padding:0 2px 0 0;width:229px;}
+#search_submit{float:left;margin:0 0 0 3px;background:url('../img/bg-search-submit.png') no-repeat scroll top left;width:33px;height:33px;text-indent:-9999px;cursor:pointer;}
+#search_submit:hover{background-position:bottom left;}
+#search_submit:active{position:relative;top:1px;}
+body.blog.archives .archives-link{display:none;}
+
+body.blog .callout {
+    position: relative;
+}
+
+body.blog .callout .books {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    width: 318px;
+    height: 164px;
+    background: transparent url('../img/new/callout-books.png') no-repeat;
+}
+
+body.blog .callout h3 {
+    margin-left: 40px;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+body.blog .callout p {
+    margin:0 30px 0 0;
+    width: 335px;
+    font: 13px/1.231 "Lucida Grande","Lucida Sans Unicode",verdana,arial,helvetica,clean,sans-serif;
+}
+body.blog .callout a{
+    margin-left: 40px;
+    font-size:108%;
+    font-weight:bold;
+    line-height:52px;
+    color:#195170;
+    text-decoration:none;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.5);
+}
+body.blog .callout a:hover{color:#FFF;text-shadow:1px 1px 1px #3B88BA;}
+body.blog .cols2{padding:18px 0 0;}
+body.blog .categories li,body.blog .resource-list li{float:left;width:140px;}
+/* 
+ABOUT ---------------------------- */
+body.blog .about{margin:35px 10px 36px 0;}
+body.blog .about p{font-size:85%;line-height:1.6363636364em;color:#fff;}
+body.blog .about p.title{color:#252525;}
+body.blog .about p a{color:#8fd7ff;text-decoration:none;text-shadow:1px 1px 1px rgba(0,0,0,0.2);}
+body.blog .about p a:hover{color:#fff;}
+body.blog .about a.more{float:left;clear:both;text-decoration:none;}
+body.blog .about a.more:hover{color:#252525;}
+body.blog .about .btn{clear:both;margin-top:10px;}
+/* 
+SUBSCRIBE ---------------------------- */
+form#subscribe{margin:23px 30px 0 -7px;padding: 0 0 30px 0;}
+form#subscribe label{display:block;padding:20px 0 5px 82px;background:url('../img/bg-subscribe.png') no-repeat scroll 14px bottom;height:20px;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:15px;color:#fff;}
+form#subscribe .textbox{float:left;width:214px;}
+form#subscribe .submit{top:1px;left:3px;padding:0;width:63px;}
+form#subscribe .submit:hover{cursor:pointer;}
+/* 
+ON TWITTER ---------------------------- */
+body.blog .twitter_update_list{padding:0 0 50px;}
+body.blog .twitter_update_list li{padding:25px 30px 0 0;}
+body.blog .twitter_update_list{color:#fff;font-size:11px;line-height:1.4545454545em;}
+body.blog .twitter_update_list .date,.twitter-timestamp,body.blog .twitter_update_list li a{color:#252525;}
+.twitter-timestamp{float:none;border:0;display:block;font-size:10px;}
+body.blog .twitter_update_list .via{border-right:0;color:#252525;}
+body.blog .pagetitle{margin:20px 0;}
+body.blog .archives-list{margin:30px 0 40px 40px;}
+body.blog .archives-list li{float:left;width:200px;}
+body.blog .archives-list a{font-size:14px;line-height:36px;font-weight:bold;}
+body.blog .entry.archive{margin-top:40px;}
+/* 
+COMMENTS ---------------------------- */
+#comments{padding-left:40px;}
+#comments h3{float:left;position:relative;left:-3px;padding:16px 0 0 22px;width:190px;height:50px;background:url('../img/sp-icons.png') no-repeat scroll -187px -256px;font-size:22px;line-height:1em;z-index:50;}
+#comments p.links{float:right;margin-right:208px;line-height:44px;width:auto;top:0;}
+#comments ol{clear:both;position:relative;top:-22px;z-index:48;}
+#comments li{padding:30px 0;background-image:url('../img/hr-dashed.gif');background-position:bottom right;background-repeat:repeat-x;}
+#comments li:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+#comments li{display:inline-block;}
+/* Hides from IE-mac \*/
+#comments li{height:1%;}
+#comments li{display:block;}
+#comments .comment-author,#comments .comment-meta{float:right;margin-bottom:0.25em;font-size:11px;line-height:14px;}
+#comments .comment-author{width:185px;}
+#comments .comment-meta{clear:right;margin:10px 0 0;padding:8px 0 0 13px;background:transparent url('../img/hr-dashed.gif') repeat-x top right;width:172px;}
+#comments .comment-author img{float:left;margin:2px 15px 0 0;padding:4px 4px 4px 18px;background:url('../img/sp-icons.png') no-repeat scroll -284px -159px;width:48px;height:48px;}
+#comments .comment-author cite{float:right;width:100px;}
+#comments .pingback .comment-author cite{padding-left:13px;width:172px;}
+#comments .comment-author a{color:#b7e5ff;text-decoration:none;text-shadow:1px 1px 1px #3B88BA;}
+#comments .comment-author a:hover{color:#fff;}
+#comments .comment-meta a{font-weight:bold;text-decoration:none;color:#346b8b;}
+#comments p{margin:0 10px 1em 0;width:490px;line-height:23px;}
+#comments p.nocomments{clear:both;}
+#comments .says{display:none;}
+#comments li.pull{margin-left:-258px;padding-left:258px;}
+#comments .meta{float:right;width:185px;}
+#comments .meta p{float:right;margin-bottom:0.25em;width:100px;font-size:11px;line-height:14px;}
+#comments .meta .author a{color:#b7e5ff;text-decoration:none;text-shadow:1px 1px 1px #3B88BA;}
+#comments .meta .author a:hover{color:#fff;}
+#comments .meta .gravatar{float:left;margin:2px 15px 0 0;padding:4px 4px 4px 18px;background:url('../img/sp-icons.png') no-repeat scroll -284px -159px;width:48px;height:48px;}
+#comments .meta .date{font-weight:bold;}
+#comments .meta .date span{font-weight:normal;color:#346b8b;}
+/* 
+COMMENT FORM ---------------------------- */
+body.blog form#comment{margin:13px 0 30px 40px;width:485px;}
+body.blog form#comment .submit{margin-top:2px;height:33px;line-height:33px;width:155px;}
+body.blog form#comment .logged-in{margin:10px 0;}
+body.blog form#search .submit{margin-top:8px;}
+body.blog #tab .tab a{background-image:url('../img/bg-blog-tab-homebound.png');background-position:bottom left;}
+body.blog-home #tab .tab a{background-position:top left;}
+
+/*
+Title:Blue Sky Resumes - Choose Writer
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.01
+*/
+body.choose-writer #bd{margin-top:55px;}
+body.choose-writer #bd h2{margin-left:40px;color:#0e3143;font-size:24px;}
+body.choose-writer #bd h2 strong{display:block;color:#252525;font-size:72px;letter-spacing:-1px;line-height:87px;}
+body.choose-writer #bd .lolite{margin-bottom:45px;}
+body.choose-writer .lolite .text{padding:25px 225px 25px 42px;}
+body.choose-writer .lolite img.art{bottom:-5px;position:absolute;right:-64px;}
+body.choose-writer .wide h4{margin-right:38px;}
+body.choose-writer .wide p{font-size:14px;}
+body.choose-writer .narr .shadow{padding-top:25px;top:0;}
+body.choose-writer .trusted-writers{padding-top:40px;padding-bottom:40px;}
+body.choose-writer .trusted-writers h4{margin-right:0;}
+body.choose-writer #get-quote{min-height:147px;}
+body.choose-writer .narr .blurb{padding-left:20px;width:auto;}
+body.choose-writer .blurb h4{font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;color:#fff;font-size:22px;line-height:26px;font-weight:500;text-shadow:1px 1px 0 #256D95;}
+body.choose-writer .blurb h5{width:auto;font-size:17px;}
+body.choose-writer .blurb .links{font-weight:bold;}
+body.choose-writer .icons{padding:1px 0;}
+body.choose-writer .pdf .sprite{position:absolute;top:-9px;left:20px;margin-right:5px;background:url('../img/sp-icons.png') no-repeat scroll -31px -178px;width:31px;height:34px;}
+body.choose-writer .pdf .text{margin-left:32px;}
+
+body.default h2 strong{font-size:46px;line-height:1.6em;}
+body.default .lolite{margin-bottom:40px;padding-top:25px;padding-bottom:25px;padding-right:40px;}
+body.default .lolite .art{position:absolute;right:-50px;bottom:-4px;}
+body.default h4.btn{margin-right:40px !important;margin-bottom:25px !important;}
+body.default .narr .shadow{top:0;}
+body.default #get-quote{padding-top:1px;padding-bottom:28px;}
+body.default #get-quote h4{margin-bottom:0;}
+body.default form{margin-bottom:25px;}
+body.default .box{margin:4px 40px 4px 0;}
+body.default .textbox.first{width:210px;}
+body.default .textbox.last{width:217px;}
+body.default .textarea textarea{width:416px;}
+body.default .submit{margin:4px 0;}
+body.default .wide blockquote{margin: 0 40px 24px 30px;font-style: italic;line-height: 20px;}
+body.default .wide blockquote p{margin-bottom:1em;}
+
+/*
+Title:Blue Sky Resumes - DIY
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.01
+*/
+body.diy h2{position:relative;margin-bottom:10px;}
+body.diy h2 strong{font-size:45px;line-height:1.2em;}
+body.diy #bd .lolite{position:relative;margin-bottom:44px;padding:24px 180px 24px 218px;}
+body.diy .lolite .art{position:absolute;bottom:0;right:-80px;background:transparent url('../img/ftr-diy.png') no-repeat scroll 0 0;height:260px;width:287px;}
+body.diy .wide h5{font-size:14px;}
+body.diy .wide p{font-size:14px;line-height:24px;}
+body.diy .wide h4.btn{width:300px !important;margin:0 0 30px !important;}
+body.diy .narr .shadow{padding-top:25px;top:0;}
+
+/*
+Title:Blue Sky Resumes - Executive Services
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.01
+*/
+body.executive h2 strong{font-size:46px;line-height:1.5em;text-indent:-2px;}
+body.executive .lolite{margin-bottom:55px;padding:24px 210px 24px 218px;}
+body.executive .lolite p{color:#fff;padding-left:42px;font-size:14px;line-height:24px;}
+body.executive .lolite p a{font-weight:bold;}
+body.executive .lolite .art{position:absolute;bottom:-42px;right:-136px;}
+body.executive .wide{padding-bottom:25px;}
+body.executive h4.icon{margin-top:10px;}
+body.executive h4.icon span{top:-35px;}
+body.executive h4.tie-plus{margin-top:50px;}
+body.executive #get-quote{padding-bottom:20px;}
+body.executive a.btn .larr,body.executive a.btn .rarr{display:block;position:absolute;bottom:-20px;left:45px;border-bottom:20px solid transparent;border-right:10px solid #2578ab;height:0;width:0;}
+body.executive a.btn .rarr{left:55px;border-right:0;border-left:10px solid #2578ab;}
+body.executive a.btn:hover .larr{border-right:10px solid #235C7E;}
+body.executive a.btn:hover .rarr{border-left:10px solid #235C7E;}
+body.executive .resume-list h6{margin-right:35px;}
+body.executive .resume-list ul{float:left;margin-bottom:25px;width:240px;}
+body.executive .hilite{position:relative;padding:30px 0 30px 432px;color:#fff;}
+body.executive .hilite h3{font-size:31px;}
+body.executive .hilite p{margin-right:65px;font-size:14px;line-height:24px;}
+body.executive .hilite .art{position:absolute;bottom:-4px;left:245px;}
+
+/*
+Title:Blue Sky Resumes - Free Resume Help
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.01
+*/
+body.free-land #bd{margin-top:15px;}
+body.free-land .lolite{padding:25px 275px 25px 220px;}
+body.free-land h2 strong{font-size:65px;line-height:1.5em;}
+body.free-land .lolite .art{position:absolute;bottom:-1px;right:-32px;}
+body.free-land h4.icon{margin:35px 0 0 40px;}
+body.free-land .col2 h4.icon{margin:0 0 15px 0;}
+body.free-land .col2{margin-top:30px;margin-bottom:30px;}
+body.free-land .col2.left{padding-right:32px;width:310px;}
+body.free-land .col2 p{font-size:13px;line-height:23px;}
+body.free-land .hilite{padding:15px 0 15px 262px;color:#fff;}
+body.free-land .hilite h3{font-size:44px;}
+body.free-land .hilite h3 a{text-decoration:none;}
+body.free-land .hilite p{font-size:14px;line-height:24px;color:#d2e8f6;}
+body.free-land .col2 h5{margin-top:0;font-size:16px;font-weight:bold;line-height:21px;}
+body.free-land h3.quiz{font-size:55px;}
+body.free-land h3.quiz span{position:relative;top:-0.75em;font-size:27px;line-height:27px;}
+body.free-land form#quiz h5{padding-bottom:0;}
+body.free-land form#quiz ul{padding-top:10px;}
+body.free-land form#quiz ol li{padding:0;}
+body.free-land form#quiz ol li li{padding:5px 0;}
+body.free-land form#quiz .submit{margin-top:12px;}
+body.free-land .entry-list,body.free-land .resource-list{padding-bottom:0;}
+body.free-land #ask{margin-top:15px;padding:0 35px 0 0;}
+body.free-land #ask .box{float:left;width:432px;}
+body.free-land #ask label{display:none;}
+body.free-land #ask textarea{padding-top:7px;height:30px;width:414px;}
+body.free-land #ask .submit,body.free-land #ask p{float:right;margin:2px 0;padding:0;width:200px;}
+body.free-land #ask p{font-size:11px;line-height:14px;color:#8fd7ff;text-shadow:1px 1px 1px #3B88BA;}
+body.free-land #ask a{text-decoration:none;}
+body.free-land li.links{margin-top:30px;}
+body.free-land .resource-list li.links{margin:0;padding-top:20px;}
+body.free-land li.links a{position:relative;color:#fff;font-weight:bold;text-shadow:none;}
+body.free-land li.links a span{display:block;position:absolute;right:-25px;top:0.25em;background:url('../img/bg-expand.gif') no-repeat scroll bottom left;width:12px;height:12px;}
+body.free-land li.links a span.contract{background-position:top left;}
+body.free-land .diy{float: none !important; position:relative;padding-right:25px;}
+/*body.free-land .diy h3{font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif !important;font-size:31px;line-height:45px;}
+body.free-land .diy h3 em{float:left;padding-right:12px;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:93px;line-height:1em;font-style:normal;}
+body.free-land .diy h3 em em{float:left;padding:0;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:52px;line-height:100px;}
+body.free-land .diy h3 span{float:left;position:relative;top:15px;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:27px;}
+body.free-land .diy h4{position:absolute;top:40px;right:25px;}
+body.free-land .diy h4 a{font-size:18px;line-height:32px !important;height:32px !important;width:145px;}
+*/
+body.free-land .nolite{position:relative;padding:30px 0 30px 205px;}
+body.free-land .nolite .art{position:absolute;top:0;left:0;background:url('../img/bg-free-resume-writing.png') no-repeat scroll 0 0;width:354px;height:235px;}
+body.free-land .nolite h4{position:relative;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:35px;}
+body.free-land .nolite p{position:relative;font-size:14px;line-height:24px;}
+body.free-land #course-signup{margin-top:10px;}
+body.free-land #course-signup .box{margin-bottom:5px;}
+body.free-land #course-signup .textbox.first{width:254px;}
+body.free-land #course-signup .textbox.last{width:254px;}
+body.free-land #course-signup .submit{width:155px;height:33px;line-height:33px;}
+
+.diy.hilite{padding:15px 0 15px 262px;color:#fff;}
+.diy.hilite{float: left;position:relative;padding-right:25px;}
+.diy.hilite h3{font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif !important;font-size:31px !important;line-height:45px;}
+.diy.hilite h3 em{float:left;padding-right:12px;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:93px;line-height:1em;font-style:normal; font-weight: bold;}
+.diy.hilite h3 em em{float:left;padding:0;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:52px;line-height:100px;}
+.diy.hilite h3 span{float:left;position:relative;top:15px;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:27px;}
+.diy.hilite h4{position:absolute;top:40px;right:25px;}
+body.default .diy.hilite h4{margin-right:0 !important;}
+.diy.hilite h4 a{font-size:18px;line-height:32px !important;height:32px !important;width:145px;}
+.diy.hilite p{font-size:14px;line-height:24px;color:#d2e8f6;}
+
+/*
+Title:Blue Sky Resumes - Gamasutra
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.01
+*/
+body.gamasutra #bd{margin-top:0;}
+body.gamasutra #hd-bar-content h3{color:#ffffff;float:left;font-size:30px;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-weight:bold;margin:10px 0 0 40px;text-shadow:#256d95 1px 1px 0;}
+
+/*
+Title:Blue Sky Resumes - Home
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.01
+*/
+body.home #bd{margin-top:55px;}
+body.home #bd h2{position:relative;margin-bottom:10px;margin-left:40px;display:block;color:#252525;font-family:"ITCLubalinGraphDemi",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:73px;letter-spacing:-1px;line-height:70px;text-indent:-6px;}
+body.home #bd h2 span{background:transparent url('../img/bg-bubble-lg.png') no-repeat 0 0;bottom:18px;display:block;color:#0e3143;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:17px;font-weight:100;height:104px;line-height:20px;padding:35px 0 0 12px;position:absolute;right:30px;text-align:center;text-transform:uppercase;width:150px;}
+body.home #bd h2 span strong{display:block;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:63px;font-weight:500;line-height:49px;text-indent:10px;}
+body.home #bd .lolite{position:relative;margin-bottom:34px;padding:24px 100px 24px 218px;z-index:5;}
+body.home .lolite p{padding-left:42px;width:435px;color:#fff;font-size:14px;line-height:24px;}
+body.home #bd .lolite img.art{position:absolute;top:-29px;right:-205px;}
+body.home .hilite{padding:32px 22px 32px 258px;}
+body.home h4.btn{margin-right:40px !important;margin-bottom:50px !important;}
+body.home .cols2 .narr blockquote{margin-top:56px;}
+body.home h4.tie{margin-top:10px;}
+body.home h4.tie span{top:-15px;}
+body.home h4.head span{top:-15px;}
+body.home h4.pad span{top:-10px;}
+body.home h4.head,body.home h4.pad{margin-top:60px;}
+body.home p.links{line-height:23px;}
+
+/*
+Title:Blue Sky Resumes - Our Process
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.01
+*/
+body.our-process #bd{margin-top:75px;}
+body.our-process #bd h2{position:relative;margin-bottom:25px;margin-left:40px;display:block;color:#252525;font-size:39px;}
+body.our-process #bd h2 strong{display:inline;position:relative;top:1px;font-size:99px;}
+body.our-process #bd .lolite{position:relative;margin-bottom:34px;padding:24px 100px 24px 218px;}
+body.our-process .lolite p{padding-left:42px;width:525px;}
+body.our-process .lolite p.expand{letter-spacing:1px;}
+body.our-process .lolite p.right{text-align:right;}
+body.our-process .art{position:absolute;bottom:-1px;right:-60px;}
+body.our-process .wide p{margin:0 25px 2em 0;line-height:20px;}
+body.our-process .wide h5{margin-bottom:1em;}
+body.home .cols2 .narr blockquote{margin-top:56px;}
+body.our-process h4 strong{position:relative;top:2px;color:rgb(49,135,189);color:rgba(3,74,114,0.3);font-family:"ITCLubalinGraphBold",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:40px;font-weight:bold;}
+body.our-process h4.thumb{margin-top:10px;}
+body.our-process h4.thumb span{top:-2px;}
+body.our-process h4.book span{top:0;left:-100px;}
+body.our-process h4.keys span{top:12px;}
+body.our-process h4.book{margin-top:40px;}
+body.our-process h4.keys{margin-top:30px;}
+body.our-process #get-quote{margin-bottom:0;padding-bottom:30px;}
+
+
+
+/*
+Title:Blue Sky Resumes - Landing
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.01
+*/
+
+
+body.landing .cols2 {font-style:italic; padding-top: 20px;}
+body.landing .cols2 blockquote cite {color: #252525;
+display: block;
+font-size: 13px;
+font-weight: 800;
+padding-bottom: 12px;
+}
+
+body.landing form#quote fieldset {background:none; width:500px;padding-bottom: 20px;}
+body.landing blockquote {padding-left:10px;}
+/*body.landing .vdash {background: none;}*/
+body.landing h2 {padding-left: 5px; font-size:50px !important; padding-bottom: 5px; font-family: "ITCLubalinGraphDemi",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif; font-weight: 900;}
+body.landing .col2.narr {float: right; padding-top:20px; width:190px;}
+body.landing .col2.narr h4 {font-weight:bold; font-size:20px; padding-left:10px; padding-bottom:20px;}
+body.landing .subheading {margin-left: 50px; font-family: "ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif; color:white; font-size:24px; line-height: 34px; padding-bottom: 20px; padding-top: 10px;}
+body.landing .contact {margin-top:-40px;}
+body.landing .narr p {padding-bottom:10px;}
+
+/*
+Title:Blue Sky Resumes - Our Services
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.01
+*/
+body.our-services #bd{margin-top:55px;}
+body.our-services h2 strong{font-family:"ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:46px;line-height:1.5em;}
+body.our-services .lolite{padding:24px 230px 24px 218px;}
+body.our-services .lolite .text{margin-bottom:8px;}
+body.our-services .lolite .art{position:absolute;bottom:-27px;right:-76px;}
+body.our-services #get-quote{margin-bottom:0;padding-top:38px;padding-bottom:30px;}
+body.our-services #get-quote h4.btn{margin:0 !important;}
+body.our-services .hilite{padding-bottom:40px;}
+body.our-services .hilite p{margin-right:35px;line-height:23px;}
+body.our-services .wide h4{margin-top:40px;margin-bottom:14px;padding-bottom:12px;font-family:"ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:35px;}
+body.our-services .wide h4 span{float:left;}
+body.our-services .alt{margin:30px 0 25px;color:#144460;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:17px;}
+body.our-services .wide li{position:relative;margin-right:35px;margin-bottom:25px;}
+body.our-services .wide li h5{margin-top:30px;margin-bottom:6px;padding-bottom:6px;background:url('../img/hr-dashed.gif') repeat-x scroll -3px bottom;}
+body.our-services .wide h5 span{float:left;}
+body.our-services .wide h5 em,body.our-services .wide h4 em{position:relative;top:-2px;float:right;color:#fff;font-size:18px;font-style:normal;text-shadow:1px 1px 1px #256D95;}
+body.our-services .wide h4 em{font-family:"Lucida Grande","Lucida Sans Unicode",verdana,arial,helvetica,clean,sans-serif;top:0.75em;}
+body.our-services .wide li p{clear:both;margin-right:0;}
+body.our-services .wide h5 em span{color:#144460;font-size:13px;font-weight:normal;text-shadow:none;float:none;}
+body.our-services a.btn.lg{margin-bottom:0;}
+body.our-services .blurb a{font-weight:bold;}
+body.our-services .blurb.link,body.our-services .blurb.hdash{padding-top:1em;}
+body.our-services .blurb.link a{padding-bottom:1em;color:#fff;font-size:14px;line-height:24px;}
+body.our-services .narr .blurb{width:auto;}
+
+/*
+Title:Blue Sky Resumes - Quiz
+Author:Matt Bainton,http://inlikealion.com
+Version:2009.12
+*/
+body.quiz #hd-bar{margin-bottom:40px;}
+body.quiz #hd-bar h3{color:#ffffff;float:left;font-size:32px;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-weight:300;margin:10px 0 0 40px;text-shadow:#256d95 1px 1px 0;}
+body.quiz .questions{padding-left:35px;}
+body.quiz .questions .pull{margin-left:-255px;padding-left:255px;}
+body.quiz .hilite{padding:28px 65px 32px 262px;}
+body.quiz #bd h2{color:#ffffff;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:52px;font-weight:500;letter-spacing:-1px;line-height:47px;margin-left:0;margin-bottom:14px;text-shadow:#4c93c1 1px 1px 1px;}
+body.quiz #bd h2 strong{display:block;color:#fff;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:63px;letter-spacing:0px;margin-top:10px;}
+body.quiz .hilite p{color:#d2e9f7;font-size:108%;line-height:1.85em;}
+body.quiz form#quiz .errors{padding:20px 0 0 40px;}
+body.quiz form#quiz{padding:0 0 45px 40px;}
+body.quiz form.vdash{background-position:right 0;}
+body.quiz form h4.btn{margin:22px 0 22px -8px !important;width:240px;}
+body.quiz .col2.wide{width:692px;padding-bottom:40px;}
+body.quiz .col2.wide h4{font-family:"ITCLubalinGraphDemi",Rockwell,"Trebuchet MS","Gill Sans","Lucida Grande",Arial,sans-serif;font-size:50px;}
+body.quiz .col2 form{margin:8px 30px 0 0;width:495px;}
+body.quiz .col2 h4.btn{margin-top:40px !important;margin-right:30px !important;margin-bottom:40px !important;width:485px;}
+body.quiz .col2 form .box{margin:4px 0;}
+body.quiz .col2 form .textbox{position:relative;}
+body.quiz .col2 form .textbox.last{width:244px;}
+body.quiz .col2 form .submit{margin-top:4px;}
+body.quiz .col2 li h5{margin-bottom:1em;}
+body.quiz .share div{float:left;margin:0 0 20px;padding:0 0 15px;width:423px;}
+body.quiz .share .icons{float:left;width:80px;}
+body.quiz .share .icons a{float:left;margin-right:8px;}
+body.quiz .share .icons img:hover{-moz-box-shadow:0 0 2px #FFF;-webkit-box-shadow:0 0 2px #FFF;}
+body.quiz div.btn,body.quiz div.btn input{width:275px;}
+body.quiz div.btn{margin:20px 0 !important;}
+/* hide facebook button */
+.FBConnectButton_Simple{display:none;}
+
+/*
+Title:Blue Sky Resumes - Quote
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.01
+*/
+body.quote #bd{margin-top:0;}
+body.quote #hd-bar-content h3{color:#ffffff;float:left;font-size:32px;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-weight:bold;margin:10px 0 0 40px;text-shadow:#256d95 1px 1px 0;}
+
+/*
+Title:Blue Sky Resumes - Resume
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.05
+*/
+body.resume #bd{margin-top:18px !important;}
+body.resume #hd-bar-content table{float:left;margin-left:24px;width:643px;}
+body.resume #hd-bar-content table td{padding:0 25px 0 18px;background:url('../img/bg-chevron.png') no-repeat scroll right center;text-align:center;}
+body.resume #hd-bar-content table td.static{min-width:85px;}
+body.resume #hd-bar-content table td.sub-title{padding-right:0;background:none;min-width:330px;text-align:left;}
+body.resume #hd-bar h3{color:#ffffff;float:left;font-size:32px;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;text-shadow:#256d95 1px 1px 0; font-weight: bold;}
+body.resume .nolite{padding:0 0 13px 40px;}
+body.resume .nolite a{float:left;margin-right:8px;padding:6px 0;background:rgba(3,74,114,0.4);color:#144460;font-size:93%;text-align:center;text-decoration:none;text-shadow:1px 1px 3px rgba(255,255,255,0.6);border:1px solid transparent;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+body.resume .nolite a.old{width:120px;}
+body.resume .nolite a.page1{width:70px;}
+body.resume .nolite a.page2{width:85px;}
+body.resume .nolite a.page1:hover,
+body.resume .nolite a.page2:hover,
+body.resume .nolite a.old:hover{background:rgba(255,255,255,0.1);border-top:1px solid rgba(255,255,255,0.2);border-left:1px solid rgba(255,255,255,0.2);border-bottom:1px solid rgba(0,0,0,0.1);border-right:1px solid rgba(0,0,0,0.1);}
+body.resume .nolite a.selected{background:rgba(255,255,255,0.3);font-weight:bold;border-top:1px solid rgba(255,255,255,0.2);border-left:1px solid rgba(255,255,255,0.2);border-bottom:1px solid rgba(0,0,0,0.1);border-right:1px solid rgba(0,0,0,0.1);}
+body.resume .nolite a.selected:hover{background:rgba(255,255,255,0.3);}
+body.resume .hilite{position:relative;padding:16px 0 20px 239px;border-right:1px solid rgba(0,0,0,0.1);}
+body.resume .hilite a.info-btn{position:absolute;top:-42px;right:5px;display:block;background:url('../img/sp-info.png') no-repeat scroll top left;width:101px;height:89px;text-indent:-9999px;z-index:50;}
+body.resume .hilite a.info-btn:hover{background-position:0 -89px;}
+body.resume .hilite a.info-btn:active,body.resume .hilite a.info-btn.selected{background-position:bottom left;}
+body.resume .container{width:691px;overflow:hidden;}
+body.resume .info{display:none;margin:0 1px;padding:30px 58px;color:#292929;background:#f9f5a4;line-height:24px;width:573px;z-index:48;}
+body.resume .info-teaser{margin:0 1px;padding:5px 20px;color:#202020;background:#f9f5a4;font-weight:bold;line-height:24px;width:649px;border-bottom:1px solid #d9d5A4;z-index:48;}
+body.resume .info-teaser a{color:#1771AA;}
+body.resume #bd .info h5{color:inherit;font-family:inherit;font-size:inherit;font-weight:bold;text-transform:inherit;line-height:inherit;}
+body.resume #bd .info p{margin-bottom:1em;}
+body.resume .resumes{width:100%;}
+body.resume .resumes img{float:left;border-bottom:1px solid #3e7699;}
+
+/*
+Title:Blue Sky Resumes - Right Fit
+Author:Matt Bainton,http://inlikealion.com
+Version:2010.01
+*/
+body.right-fit #content h2 strong{font-size:73px;letter-spacing:-2px;}
+body.right-fit #bd .lolite{margin-bottom:38px;padding:24px 233px 24px 218px;position:relative;}
+body.right-fit .lolite img.art{bottom:-5px;position:absolute;right:-113px;}
+body.right-fit .hilite{color:#ffffff;padding:32px 22px 32px 258px;}
+body.right-fit .hilite p{font-size:14px;}
+body.right-fit .hilite a{font-weight:800;}
+body.right-fit #not-fit{margin-top:46px;}
+body.right-fit #trusted-writers{margin-top:30px;}
+body.right-fit #trusted-writers h5{padding-bottom:4px;}
+body.right-fit #trusted-writers a{border-bottom:1px solid #a2d0ed;padding:12px 0 2px;text-decoration:none;}
+body.right-fit #trusted-writers p{font-size:13px;padding-top:3px;}
+
+/*
+Title:Blue Sky Resumes - Samples Core
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2009.12
+*/
+body.samples #bd{margin-top:55px;}
+body.samples #bd h2{position:relative;margin-left:40px;font-size:24px;line-height:30px;}
+body.samples #bd h2 strong{font-size:39.4px;line-height:40px;font-family:"ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;}
+body.samples .lolite{margin-top:20px;padding:25px 0 25px 220px;}
+body.samples .lolite .art{position:absolute;right:0;bottom:0;}
+body.samples .text h4.btn{margin:0 0 15px !important;}
+body.samples .lolite a.view{background:url('../img/btn-mag-circle.png') no-repeat center center;bottom:0;display:block;height:217px;opacity:0.9;position:absolute;right:25px;width:168px;}
+body.samples .lolite a.view:hover{opacity:1;}
+body.samples .text .links{font-size:77%;font-weight:bold;line-height:24px;}
+body.samples #bd h5{font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:108%;font-weight:300;text-transform:uppercase;color:#144460;line-height:40px;}
+body.samples .related{padding:10px 0 36px 110px;}
+body.samples .related li{display:inline;float:left;margin:0 7px 6px 0;}
+body.samples .related li a{display:block;position:relative;padding:0 24px 0 10px;background:#2578ab;height:26px;line-height:26px;font-size:85%;color:#8fd7ff;text-decoration:none;text-shadow:#184e70 1px 1px 1px;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+body.samples .related li a:hover{color:#fff;background:#145986;}
+body.samples .related li a span{position:absolute;top:7px;right:7px;background:url('../img/sp-mag-sm.png') no-repeat scroll top left;width:11px;height:12px;}
+body.samples .related li a:hover span{background-position:bottom left;}
+body.samples .related .text{clear:both;}
+body.samples #bd .vdash cite{display:block;padding:10px 0;font-size:123.1%;font-weight:bold;line-height:1.375em;letter-spacing:-1px;color:#252525;}
+body.samples #bd .vdash blockquote{padding-bottom:20px;}
+body.samples #bd .vdash blockquote p{padding:0 0 0 40px;font-style:italic;font-size:108%;line-height:1.7142857143em;}
+body.samples #bd .vdash blockquote p em{font-weight:bold;}
+body.samples .article-list li{padding:10px 0;}
+body.samples .article-list h4{padding:0 0 10px;}
+body.samples .article-list h4 a{font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:18px;line-height:1.3333333333em;color:#f9f5a4;text-decoration:none;text-shadow:#367ead 1px 1px 1px;}
+body.samples .article-list h4 a:hover{color:#fff;}
+body.samples .article-list li p,body.samples .article-list li h2,body.samples .article-list li h3,
+body.samples .article-list li h5,body.samples .article-list li h6{margin:0 !important;padding:0 !important;font-family:inherit !important;font-size:12px !important;line-height:24px !important;}
+body.samples .article-list li p.meta{margin-top:1em !important;font-size:11px !important;}
+body.samples .article-list small{font-size:90%;text-transform:uppercase;color:#144460;}
+body.samples .article-list a{color:#0e3143;}
+body.samples .article-list .lolite{margin:25px -17px 0 -34px;padding-left:34px;border-top:1px solid rgba(17,86,132,0.3);border-right:1px solid rgba(17,86,132,0.3);border-bottom:1px solid rgba(17,86,132,0.3);}
+body.samples .article-list .lolite a{display:block;width:200px;font-family:"ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:16px;color:#0e3143;line-height:20px;border:0;text-decoration:none;}
+body.samples .article-list .lolite .more{position:absolute;top:-8px;left:257px;background:url('../img/more-samples.png') no-repeat scroll top left;width:88px;height:76px;}
+body.samples .free-help{position:relative;padding:30px 0 30px 205px;}
+body.samples .free-help .art{position:absolute;top:0;left:0;background:url('../img/bg-free-resume-writing.png') no-repeat scroll 0 0;width:354px;height:235px;}
+body.samples .free-help h4{position:relative;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:35px;}
+body.samples .free-help p{position:relative;font-size:14px;line-height:24px;}
+body.samples #course-signup{margin-top:10px;}
+body.samples #course-signup .box{margin-bottom:5px;}
+body.samples #course-signup .submit{width:155px;height:33px;line-height:33px;}
+
+/*
+Title:Blue Sky Resumes - Samples Categories
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2009.12
+*/
+body.samples-cat #bd{margin-top:35px;}
+body.samples-cat #hd-bar-content table{float:left;margin-left:24px;}
+body.samples-cat #hd-bar-content table td{padding:0 25px 0 18px;background:url('../img/bg-chevron.png') no-repeat scroll right center;}
+body.samples-cat #hd-bar-content table td.sub-title{padding-right:0;background:none;}
+body.samples-cat #hd-bar h3{color:#ffffff;float:left;font-size:32px;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-weight:bold;text-shadow:#256d95 1px 1px 0;}
+body.samples-cat .vdash{padding:0 0 30px;}
+body.samples-cat .cols2 ul{width:730px;}
+body.samples-cat .cols2 li{float:left;padding:0 10px 0 40px;width:315px;}
+body.samples-cat .cols2 li a{font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:20px;line-height:36px;color:#c6ebff;text-decoration:none;text-shadow:1px 1px 1px #3B88BA; font-weight: bold;}
+body.samples-cat .cols2 li a:hover{color:#fff;}
+
+/*
+Title:Blue Sky Resumes - Samples Entry
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2009.12
+*/
+body.samples-entry .lolite{margin-top:20px;padding:25px 0 25px 260px;border-bottom:1px solid rgba(27,63,87,0);}
+body.samples-entry .lolite h4,body.samples-entry .lolite p{padding-right:36px;width:342px;}
+body.samples-entry .lolite p{margin-top:27px;font-size:12px;line-height:20px;}
+body.samples-entry .lolite a.view{bottom:0;height:291px;right:42px;width:224px;}
+body.samples-entry .arrow{border-bottom:36px solid transparent;border-right:40px solid rgba(27,63,87,0.3);display:block;height:0;left:260px;position:absolute;bottom:-37px;width:0;}
+body.samples-entry #bd .vdash{padding:30px 0;}
+body.samples-entry #bd .vdash cite{display:block;padding:10px 0;font-size:123.1%;font-weight:bold;line-height:1.375em;letter-spacing:-1px;color:#252525;}
+body.samples-entry #bd .vdash blockquote{padding-bottom:20px;}
+body.samples-entry #bd .vdash blockquote p{padding:0 0 0 40px;font-style:italic;font-size:108%;line-height:1.7142857143em;}
+body.samples-entry #bd .vdash blockquote p em{font-weight:bold;}
+body.samples-entry .article-list .lolite{margin:25px -12px 0 -24px;padding-left:24px;border-top:1px solid rgba(17,86,132,0.3);border-right:1px solid rgba(17,86,132,0.3);border-bottom:1px solid rgba(17,86,132,0.3);}
+body.samples-entry .article-list .lolite a{display:block;width:200px;font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-size:16px;color:#0e3143;line-height:20px;border:0;text-decoration:none;}
+body.samples-entry .article-list .lolite .more{position:absolute;top:-8px;left:247px;background:url('../img/more-samples.png') no-repeat scroll top left;width:88px;height:76px;}
+
+/*
+Title:Blue Sky Resumes - Samples Landing
+Author:Matt Bainton,http://inlikealion.com
+Version:2009.12
+*/
+body.samples-land #bd h2 strong{font-size:80px;line-height:80px;position:relative;width:350px;}
+body.samples-land #bd h2 span{background:transparent url('../img/bg-bubble.png') no-repeat 0 0;bottom:42px;display:block;color:#0E3143;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:17px;font-weight:100;height:84px;line-height:20px;padding:28px 0 0 2px;position:absolute;right:218px;text-align:center;text-transform:uppercase;width:115px;}
+body.samples-land #bd h2 span strong{display:block;color:#0E3143;font-family:"ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;font-size:33px;font-weight:bold;margin-top:6px;width:auto;line-height:20px;}
+body.samples-land .text{padding-right:0;width:440px;}
+body.samples-land .text p{font-family:"ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;color:#fff;font-size:24px;line-height:34px;text-shadow:1px 1px 0 #256D95;}
+body.samples-land .lolite a.view{bottom:0;height:217px;right:25px;width:168px;}
+body.samples-land #bd .pull .vdash{margin-top:40px;padding:0;}
+body.samples-land #bd .vdash h4,
+body.samples-land #bd .vdash cite{display:block;padding:0 0 18px;font-size:123.1%;font-weight:bold;line-height:1.375em;letter-spacing:-1px;color:#252525;}
+body.samples-land #bd .vdash p,
+body.samples-land #bd .vdash blockquote p{color:#1d2f3b;font-size:108%;line-height:1.77em;padding:0;}
+body.samples-land #bd .vdash blockquote{padding:0;}
+body.samples-land .col3{padding-top:55px;}
+body.samples-land .col3 ul{margin-bottom:45px;}
+
+/*
+Title:Blue Sky Resumes - Thank You
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.01
+*/
+body.thank-you h2{position:relative;margin-bottom:10px;}
+body.thank-you h2 strong{font-size:80px;line-height:1.2em;}
+body.thank-you #bd .lolite{position:relative;margin-bottom:44px;padding:24px 200px 24px 218px;}
+body.thank-you .lolite .art{position:absolute;bottom:-8px;right:-4px;}
+
+/*
+Title:Blue Sky Resumes - The Works
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.01
+*/
+body.the-works h2 strong{font-size:62px;line-height:87px;font-family:"ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;font-weight:600;text-indent:-2px;}
+body.the-works .lolite{margin-bottom:35px;padding:24px 210px 24px 218px;}
+body.the-works .art{position:absolute;bottom:-90px;right:-118px;}
+body.the-works .blurb{padding-left:20px;width:auto;}
+body.the-works .blurb h5{padding-bottom:0;width:auto;}
+body.the-works .blurb p{font-size:14px;}
+body.the-works .blurb p a{font-weight:bold;}
+body.the-works #get-quote{margin-bottom:20px;}
+body.the-works .hilite{padding-top:30px;padding-bottom:30px;}
+body.the-works .hilite h3{float:left;margin-left:42px;margin-right:25px;}
+body.the-works h4.btn.small{float:left;width:200px;}
+body.the-works h4.btn.small a{padding-left:25px;padding-right:25px;}
+body.the-works h4.btn.small a span{font-family:"Lucida Grande","Lucida Sans Unicode",verdana,arial,helvetica,clean,sans-serif;}
+
+
+
+
+
+
+
+/*
+Title:Blue Sky Resumes - Free Resume Samples
+Author:Sean Gaffney,http://seangaffney.cc
+Version:2010.01
+*/
+body.free-resume-samples h1 {font-size:50px; font-family:"ITCLubalinGraphDemi",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif; padding-left: 45px;}
+
+
+
+#popup { 
+	width: 50%;
+	left:300px;
+    height: 500px;
+    background: #f2f2f2;
+    position: fixed;
+    bottom: 200px;
+    z-index: 1000;
+    opacity: 0; }
+
+#popup img {
+	padding:20px;
+	float: left;
+	
+}
+
+#popup h3 {
+	font-family:"ITCLubalinGraphDemi",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	font-size: 30px;
+	text-align: center;
+	padding: 20px;
+	
+}
+
+#popup p {
+	padding:20px;
+	line-height: 25px;
+	
+}
+
+#popup #close {
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    background:#ccc;
+    font-size: medium;
+
+}
+
+#popup #close:hover {
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+#wufoo-z177ouqp1rt072e {
+	margin-left:-175px;
+}
+
+#bottom-button.btn {
+	border-left:5px solid rgba(17,55,76,0) !important;
+}
+
+#bottom-button #get-quote h4.btn a {
+	background-image: none !important;
+	
+}
+
+#bottom-button #get-quote h4.btn {
+	border-left: 5px solid rgba(17,55,76,0) !important;
+	border-radius: 5px !important;
+	background: rgba(17,55,76,0.51) !important;
+}
+
+#bottom-button #get-quote {
+	background: none;
+	width:300px;
+	margin-left:75px;
+}
+

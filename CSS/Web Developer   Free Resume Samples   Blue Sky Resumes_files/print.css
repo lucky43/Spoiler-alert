@@ -1,0 +1,21 @@
+/*
+Title:Blue Sky Resumes - Print Styles
+Author:Matthew Smith,http://squaredeye.com
+Version:2009.01
+*/
+body{background:white;font-size:11pt;font-family:"Lucida Grande",Lucida,Verdana,Arial,sans-serif;line-height:160%;}
+.nav,#hd-bar-content,#sb,#tab,#ft{display:none;}
+#hd, #hd-bar, #bd, #pre-footer{width:auto;margin:0 5%;padding:0;border:0;float:none !important;color:#111;background:transparent none;}
+div#content,#pre-footer{padding-top:1em;border-top:1px solid #930;}
+div#mast{margin-bottom:-8px;}
+div#mast img{vertical-align:bottom;}
+a:link,a:visited{color:#111;background:transparent;font-weight:bold;text-decoration:underline;}
+h1 a:link,h1 a:visited{font-size:30pt;text-decoration:none;}
+h2{margin-top:60px;}
+.hdash{border-top:1px solid #111;padding-top:30px;margin-top:30px;}
+#content a:link:after,#content a:visited:after{content:" (" attr(href) ") ";font-size:90%;}
+#content a[href^="/"]:after{content:" (http://www.blueskeyresumes.com" attr(href) ") ";}
+#content a[href="#"],#content a[href^="javascript"]{display:none;}
+.wide h5{font-size:16px;font-weight:bold;}
+ol.hidden li{list-style:none outside none;}
+div.share,.hdash,img,form,object,embed,.print-hidden{display:none !important;}

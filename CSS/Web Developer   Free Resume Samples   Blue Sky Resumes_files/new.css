@@ -1,0 +1,1607 @@
+/*
+Title:Blue Sky Resumes - New Global Styles
+Author:Martin Parets,http://armyofbees.com
+Version:2011.06
+*/
+
+html {
+	webkit-font-smoothing: antialiased;
+}
+
+#tab .tab a.twitter {
+	width: 115px;
+	height: 28px;
+	background: url('../img/new/sp-social-btns.png') left -57px no-repeat !important;
+	margin-top: 8px;
+	left: -120px;
+	padding: 0;
+}
+
+    #tab .tab a.twitter:hover {
+    	background-position: left -85px !important;
+    	top: 0;
+    }
+
+#tab .tab a.facebook {
+	width: 115px;
+	height: 28px;
+	background: url('../img/new/sp-social-btns.png') left top no-repeat !important;
+	margin-top: 8px;
+	left: -120px;
+}
+
+    #tab .tab a.facebook:hover {
+    	background-position: left -28px !important;
+    	top: 0;
+    }
+
+#flares {
+	background: url('../img/new/bg-pretty-flares-shd.png') left top repeat-x;
+	position: relative;
+	z-index: 100;
+}
+
+    #flares .bg {
+    	width: 100%;
+    	background: url('../img/new/bg-pretty-flares.jpg') left top no-repeat;
+    }
+
+    #flares .wrap {
+    	position: relative;
+    	padding: 33px 0 33px 218px;
+    	width: 730px;
+    }
+
+#ft .hsolid {
+	width: 692px;
+}
+
+#ft li a {
+	font-size: 85%;
+}
+
+#ft li.btn a {
+	font-weight: bold;
+}
+
+#ft ul.col-1 {
+	width: 143px;
+}
+
+#ft ul.col-2 {
+	width: 143px;
+}
+
+#ft ul.col-3 {
+	width: 160px;
+}
+
+#ft ul.col-4 {
+	width: 168px;
+}
+
+#ft ul.col-5 {
+	width: 78px;
+}
+
+#ft ul.col-45 {
+	width: 246px;
+}
+
+@media(max-width:1066px){
+	#tab .tab a.facebook,
+	#tab .tab a.facebook:hover {
+	   left: -264px;
+	   top: -73px;
+    }
+	#tab .tab a.twitter,
+	#tab .tab a.twitter:hover {
+	   left: -264px;
+	   top: -73px;
+    }
+}
+
+#hd h3 a:hover,#bd a:hover,h4.btn:hover {
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+}
+
+
+
+/*
+Title:Blue Sky Resumes - Help Guide
+Author:Martin Parets,http://armyofbees.com
+Version:2011.06
+*/
+
+body.guide #bd {
+	margin-top: 55px;
+}
+
+    body.guide #bd h2 {
+    	position: relative;
+    	margin-bottom: 10px;
+    	margin-left: 40px;
+    	display: block;
+    	color: #252525;
+    	font-family: "ITCLubalinGraphDemi",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+    	font-size: 66px;
+    	letter-spacing: -1px;
+    	line-height: 70px;
+    	text-indent: -6px;
+    }
+
+        body.guide #bd h2 span {
+        	font-size: 34px;
+        	border-bottom: 2px solid #252525;
+        	position: relative;
+        	top: -14px;
+        	left: -2px;
+        	margin-right: 10px;
+        }
+
+    body.guide #bd .lolite {
+    	position: relative;
+    	padding: 24px 100px 24px 218px;
+    	z-index: 5;
+    }
+
+        body.guide .lolite p {
+        	padding-left: 42px;
+        	width: 435px;
+        	color: #fff;
+        	font-size: 24px;
+        	font-family: "ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+        	line-height: 24px;
+        	text-shadow: 1px 1px 1px #266993;
+        }
+
+        body.guide #bd .lolite img.art {
+        	position: absolute;
+        	top: -46px;
+        	right: -17px;
+        }
+
+body.guide .col2 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+    body.guide .col2.left {
+    	padding-right: 32px;
+    	width: 310px;
+    }
+
+    body.guide .col2.right p {
+    	width: 300px;
+    }
+
+    body.guide .col2 p {
+    	font-size: 13px;
+    	line-height: 23px;
+    }
+
+body.guide .nolite,
+body.samples .nolite {
+	position: relative;
+	padding: 30px 0 30px 205px;
+}
+
+    body.guide .nolite .art,
+    body.samples .nolite .art {
+    	position: absolute;
+    	top: 33px;
+    	left: 0;
+    	background: url('../img/bg-free-resume-writing.png') no-repeat scroll 0 0;
+    	width: 366px;
+    	height: 207px;
+    }
+
+    body.guide .nolite h4,
+    body.samples .nolite h4 {
+    	position: relative;
+    	font-family: "ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+    	font-size: 32px;
+    	line-height: 33px;
+    	margin-bottom: 10px;
+    }
+
+    body.guide .nolite p,
+    body.samples .nolite p {
+    	position: relative;
+    	font-size: 14px;
+    	line-height: 24px;
+    	margin-bottom: 15px;
+    }
+
+body.guide .textbox.first,
+body.samples .textbox.first {
+	width: 245px;
+	margin-right: 9px;
+}
+
+    body.guide .textbox.first input,
+    body.guide .textbox.last input,
+    body.samples .textbox.first input,
+    body.samples .textbox.last input {
+    	width: 245px;
+    }
+
+body.guide #secrets-signup .box,
+body.samples #secrets-signup .box {
+	margin-bottom: 6px;
+}
+
+body.guide #secrets-signup .submit,
+body.samples #secrets-signup .submit {
+	padding: 10px 55px;
+	height: 35px;
+}
+
+body.guide .hilite {
+	color: #fff;
+	padding: 15px 0 15px 262px;
+}
+
+    body.guide .hilite h3 {
+    	font-size: 44px;
+    }
+
+        body.guide .hilite h3 a {
+        	text-decoration: none;
+        }
+
+body.guide h3.quiz {
+	font-family: "ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif !important;
+	font-size: 55px;
+	text-shadow: 1px 1px 1px #4089b5;
+	height: 60px;
+}
+
+    body.guide h3.quiz span {
+    	position: relative;
+    	top: -0.70em;
+    	font-size: 27px;
+    	line-height: 27px;
+    }
+
+body.guide h4.icon {
+	font-family: "ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	margin: 0 0 15px;
+	font-size: 21px;
+}
+
+body.guide h5 {
+	font-size: 16px;
+	line-height: 21px;
+	margin-top: 0;
+}
+
+body.guide form#quiz {
+	margin-bottom: 10px;
+}
+
+    body.guide form#quiz ol li {
+    	padding: 0 0 0 15px;
+    }
+
+        body.guide form#quiz ol li li {
+        	padding: 5px 0;
+        }
+
+    body.guide form#quiz h5 {
+    	padding-bottom: 5px;
+    	letter-spacing: -0.02em !important;
+    }
+
+    body.guide form#quiz .submit {
+    	margin-top: 18px;
+    }
+
+body.guide .pdf-dl {
+	position: relative;
+	height: 200px;
+	padding-left: 468px;
+}
+
+    body.guide .pdf-dl .art {
+    	position: absolute;
+    	bottom: 0;
+    	left: 220px;
+    	background: url('../img/new/bg-adobe-pdf.png') no-repeat scroll 0 0;
+    	width: 357px;
+    	height: 227px;
+    }
+
+    body.guide .pdf-dl h3 {
+    	font-family: "ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif !important;
+    	font-size: 31px !important;
+    	font-weight: bold;
+    	line-height: 45px;
+    	padding: 6px 0;
+    }
+
+    body.guide .pdf-dl p.text {
+    	font-size: 14px;
+    	line-height: 24px;
+    	width: 455px;
+    	margin-bottom: 20px;
+    }
+
+    body.guide .pdf-dl h4.btn {
+    	width: 435px;
+    }
+
+body.guide h5.sub-title {
+	font-family: "ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+}
+
+body.guide li.links {
+	margin-top: 30px;
+}
+
+body.guide .entry-list li.links {
+	margin: 0;
+	padding-top: 20px;
+}
+
+    body.guide li.links a {
+    	position: relative;
+    	color: #fff;
+    	font-weight: bold;
+    	text-shadow: none;
+    }
+
+        body.guide li.links a span {
+        	display: block;
+        	position: absolute;
+        	right: -25px;
+        	top: 0.25em;
+        	background: url('../img/bg-expand.gif') no-repeat scroll bottom left;
+        	width: 12px;
+        	height: 12px;
+        }
+
+        body.guide li.links a span.contract {
+        	background-position: top left;
+        }
+
+body.guide #advice h5 {
+	margin-bottom: -5px;
+}
+
+body.guide #samples h5 {
+	margin-bottom: 15px;
+}
+
+body.guide #samples p {
+	color: #252525;
+	padding: 10px 0;
+	font-size: 13px;
+	line-height: 23px;
+}
+
+body.guide .sample-list {
+	padding: 8px 0 20px 0;
+}
+
+.sample-list {
+	padding-bottom: 35px;
+}
+
+    .sample-list li {
+    	padding: 8px 0;
+    	margin-right: 15px;
+    	font-size: 93%;
+    	font-weight: bold;
+    	line-height: 1.4545454545em;
+    }
+
+    .sample-list a {
+    	color: #a6dfff;
+    	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    	text-decoration: none;
+    }
+
+        .sample-list a:hover {
+        	color: #fff;
+        }
+
+body.guide #samples a.btn {
+	padding: 3px 35px;
+	margin-bottom: 30px;
+}
+
+body.guide #samples .hdash {
+	position: relative;
+	left: -36px;
+	width: 350px;
+	margin-bottom: 25px;
+}
+
+body.guide #samples,
+body.guide #advice {
+	margin-bottom: 15px;
+}
+
+body.guide .hilite.ready {
+	padding-top: 32px;
+	padding-bottom: 40px;
+}
+
+    body.guide .hilite.ready h3 {
+    	font-family: "ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif !important;
+    	font-size: 55px;
+    	text-shadow: 1px 1px 0 #4089b5;
+    	font-size: 45px;
+    }
+
+    body.guide .hilite.ready p.text {
+    	font-size: 14px;
+    	margin-top: 2px;
+    }
+
+body.guide .cols2.books {
+	margin: 7px 0;
+}
+
+body.guide .book.col2 {
+	margin: 15px 0;
+}
+
+body.guide .book .art {
+	float: left;
+	margin-right: 12px;
+}
+
+body.guide .book h5 {
+	margin-top: 4px;
+	font-weight: bold;
+	color: #144460;
+	font-size: 19px;
+	font-family: "ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;
+	line-height: 19px;
+}
+
+    body.guide .book h5 small {
+    	font-size: 11px;
+    	display: block;
+    }
+
+body.guide .book p {
+	margin: 5px 0 12px;
+	line-height: 22px;
+	font-size: 12px;
+}
+
+body.guide .book.left p {
+	position: relative;
+	width: 325px;
+}
+
+body.guide .book.right p {
+	position: relative;
+	width: 350px;
+}
+
+body.guide .book.left a.btn {
+	width: 170px;
+}
+
+body.guide .book.right a.btn {
+	width: 174px;
+}
+
+
+/*
+Title:Blue Sky Resumes - Store Front
+Author:Martin Parets,http://armyofbees.com
+Version:2011.06
+*/
+
+body.store #flares .wrap {
+	height: 474px;
+}
+
+body.store #flares div.art {
+	width: 485px;
+	height: 602px;
+	background: url('../img/new/ftr-bird-books.png') left top no-repeat;
+	position: absolute;
+	left: 199px;
+	top: 22px;
+}
+
+body.store #flares img.art {
+	position: absolute;
+	top: 17px;
+	right: -10px;
+}
+
+body.store #flares h2 {
+	font-family: "ITCLubalinGraphDemi",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	color: #fff;
+	text-shadow: 1px 1px 0 #346f84;
+	font-size: 87px;
+	margin-left: 213px;
+}
+
+body.store #flares h2 span {
+	display: block;
+	font-family: "ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	font-size: 32px;
+	line-height: 38px;
+	margin-left: 35px;
+}
+
+body.store #flares h3 {
+	font-family: "ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	font-size: 21px;
+	color: #fff;
+	line-height: 38px;
+	margin: 10px 0 0 295px;
+	padding-bottom: 5px;
+	width: 446px;
+	background: url('../img/new/hr-dashed-dk.png') left bottom repeat-x;
+	text-shadow: 1px 1px 0 #4089b5;
+}
+
+body.store #flares h5 {
+	font-family: "ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;
+	font-size: 21px;
+	color: #144460;
+	line-height: 28px;
+	margin: 20px 0 20px 295px;
+	width: 455px;
+}
+
+body.store #flares p.text {
+	font-size: 14px;
+	line-height: 23px;
+	margin: 20px 0 20px 295px;
+	width: 446px;
+}
+
+body.store .book {
+    position: relative;
+	color: #252525;
+	margin-top: 60px;
+}
+
+body.store .book .hilite {
+	padding-bottom: 30px;
+}
+
+body.store .book h4 {
+	margin-top: 45px;
+	color: #fff;
+	font-family: "ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	line-height: 42px;
+	font-size: 46px;
+	text-shadow: 1px 1px 0 #4089b5;
+	background: none;
+	margin-bottom: 0;
+}
+
+body.store .book h4 a {
+	text-decoration: none;
+}
+
+body.store .book h4 span {
+	font-size: 21px;
+	display: block;
+}
+
+body.store .book h4 small {
+	display: block;
+	margin-top: 15px;
+	text-shadow: none;
+	font-size: 17px;
+	color: #144460;
+	font-family: "ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;
+}
+
+body.store .book .wide p {
+	margin: 20px 0;
+	line-height: 23px;
+	font-size: 13px;
+	width: 436px;
+}
+
+body.store .book .wide p em {
+	font-style: italic;
+}
+
+body.store .book .wide ul {
+	margin: 20px 0 20px 15px;
+	width: 436px;
+}
+
+body.store .book .wide ul li {
+	list-style: disc;
+	line-height: 19px;
+	padding: 5px 0 5px 3px;
+}
+
+body.store .book .wide p a:hover,body.store .book .wide ul a:hover {
+	color: #fff;
+}
+
+body.store .book h4.btn {
+	margin-top: 30px !important;
+	width: 445px;
+}
+
+body.store .book .narr {
+	position: relative;
+	padding-top: 260px;
+}
+
+body.store .book .cover {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 277px;
+	height: 347px;
+}
+
+body.store .book .cover .art {
+	position: absolute;
+	top: -28px;
+	left: 13px;
+	z-index: 1;
+}
+
+body.store .book .cover .price {
+	position: absolute;
+	top: 32px;
+	right: 1px;
+	font-size: 37px;
+	font-weight: bold;
+	color: #fd9411;
+	text-shadow: 1px 1px 0 #fff;
+	z-index: 100;
+}
+
+body.store .book .cover .price span {
+	font-size: 25px;
+	position: relative;
+	top: -6px;
+}
+
+body.store .book .shadow {
+	height: 142px;
+	min-height: 0;
+	background: url('../img/new/bg-shadow-dash.png') 1px bottom no-repeat;
+}
+
+body.store .book .shadow a.btn {
+	margin-top: 70px;
+	width: 150px;
+	padding: 15px 0;
+	font-weight: bold;
+	color: #8fd7ff;
+	text-align: center;
+}
+
+body.store .book .shadow a.btn:hover {
+	color: #c6ebff;
+}
+
+body.store .book blockquote {
+	padding: 17px;
+}
+
+body.store .book blockquote h5 {
+	display: block;
+	width: 100%;
+	font-family: "ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	font-size: 22px;
+}
+
+body.store .cols2.bios {
+	position: relative;
+}
+
+body.store .cols2.bios .peekaboo {
+	width: 87px;
+	position: absolute;
+	top: 250px;
+	left: 220px;
+	height: 1px;
+}
+
+body.store .cols2.bios .peekaboo span {
+	position: absolute;
+	bottom: 1px;
+	left: -26px;
+	display: block;
+	background: url('../img/sp-peekaboo.jpg') no-repeat scroll top left;
+	width: 149px;
+	z-index: 901;
+}
+
+body.store .cols2.louisefletcher .peekaboo {
+	top: 235px;
+}
+
+body.store .cols2.louisefletcher .peekaboo span {
+	height: 187px;
+}
+
+body.store .cols2.bios .wide-alt {
+	padding: 66px 0 0 151px;
+	width: 283px;
+	height: 279px;
+}
+
+body.store .cols2.bios .narr-alt {
+	padding: 66px 0 0 0;
+	width: 298px;
+	height: 279px;
+}
+
+body.store .cols2.bios h5 {
+	color: #252525;
+	font-family: "ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	font-size: 22px;
+}
+
+body.store .cols2.bios p {
+	margin: 15px 0 20px;
+	font-size: 12px;
+	line-height: 20px;
+	width: 250px;
+}
+
+body.store .cols2.bios a.btn {
+	height: 28px;
+	line-height: 28px;
+	padding: 0 15px;
+}
+
+body.store .cols2.bios .right {
+	position: relative;
+	background: url('../img/new/ftr-oprah.png') 50% 100px no-repeat;
+}
+
+body.store .cols2.bios .right h5 {
+	text-align: right;
+}
+
+body.store .cols2.bios .right a.btn {
+	font-family: "ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;
+	font-size: 18px;
+	color: #146292;
+	line-height: 46px;
+	height: 42px;
+	width: 105px;
+	text-align: center;
+	background: #fff;
+	moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.2),0 0 10px rgba(0,0,0,0.4);
+	webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2),0 0 10px rgba(0,0,0,0.4);
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.2),0 0 10px rgba(0,0,0,0.4);
+	text-shadow: none;
+	position: absolute;
+	left: 114px;
+	top: 238px;
+}
+
+body.store .cols2.bios .right a.btn:hover {
+	background-color: #cff0fa;
+	color: #0c4a71;
+}
+
+body.store .cols2.bios .right a.btn:active {
+	top: 239px;
+	moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.2),0 0 5px rgba(0,0,0,0.4);
+	webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2),0 0 5px rgba(0,0,0,0.4);
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.2),0 0 5px rgba(0,0,0,0.4);
+}
+
+body.store #options .wide-alt {
+	padding: 0;
+	width: 434px;
+}
+
+body.store #options .wide-alt .hilite {
+	padding: 35px 0 0 295px;
+	height: 225px;
+}
+
+body.store #options .narr-alt {
+	width: 298px;
+	padding-left: 0 !important;
+}
+
+body.store #options .narr-alt .hilite {
+	padding: 35px 30px 0;
+	height: 225px;
+}
+
+body.store #options h3 {
+	font-family: "ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	font-size: 31px;
+	text-shadow: 1px 1px 0 #3B88BA;
+}
+
+body.store #options p {
+	color: #14222b;
+	font-size: 12px;
+	line-height: 20px;
+	margin: 8px 0;
+}
+
+body.store #options p.pricing {
+	color: #144460;
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+
+body.store #options p.pricing span {
+	font-size: 18px;
+	color: #fff;
+	text-shadow: 1px 1px 0 #3B88BA;
+	font-weight: bold;
+}
+
+body.store #options h4.btn {
+	width: 250px;
+}
+
+body.store #options h4.btn a {
+	height: 40px !important;
+	line-height: 40px !important;
+}
+
+body.store #options ul {
+	margin: 12px 0;
+}
+
+body.store #options ul li {
+	padding: 4px 0;
+	font-size: 12px;
+}
+
+
+#popupform {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 400px;
+    left: 50px;
+    width: 485px;
+    padding: 40px;
+    background: #f0f6f9;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -moz-box-shadow:    0px 10px 10px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+    box-shadow:         0px 10px 10px rgba(0,0,0,0.4);
+}
+
+    #popupform .box {
+        background-color: #E6EBEE;
+        margin: 10px 0;
+    }
+
+    #popupform .textbox {
+        border-color: #D9E0E7 #E6EBEE #E6EBEE #D9E0E7;
+        border-radius: 5px 5px 5px 5px;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+        #popupform #ffe {
+            width: 462px;
+        }
+
+    #popupform a {
+        color: #1771AA;
+        text-decoration: none;
+    }
+
+/*
+Title:Blue Sky Resumes - View Item Page
+Author:Martin Parets,http://armyofbees.com
+Version:2011.06
+*/
+
+body.item #flares,body.item #flares .bg {
+	background-position: left 50%;
+}
+
+body.item #flares .wrap {
+	height: 273px;
+}
+
+body.item #flares .art {
+	position: absolute;
+	right: -18px;
+	top: 35px;
+}
+
+body.item #flares h2 {
+	font-family: "ITCLubalinGraphDemi",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	color: #fff;
+	text-shadow: 1px 1px 1px #346f84;
+	font-size: 87px;
+	line-height: 81px;
+	margin-left: 35px;
+	margin-top: 15px;
+}
+
+body.item #flares h2 small {
+	display: block;
+	font-family: "ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	font-size: 30px;
+	line-height: 53px;
+}
+
+body.item #flares h5 {
+	font-family: "ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;
+	font-size: 21px;
+	color: #144460;
+	margin: 12px 0 0 35px;
+}
+
+body.item #bd {
+	margin-top: 0;
+}
+
+body.item .wide {
+	padding-top: 40px;
+}
+
+body.item .wide {
+	color: #14222b;
+	padding-bottom: 15px;
+}
+
+body.item .wide h4 {
+	font-family: "ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	color: #fff;
+	font-size: 21px;
+	text-shadow: 1px 1px 0 #4089b5;
+	line-height: 31px;
+	background: none;
+}
+
+body.item .btn.lg {
+	margin-top: 40px;
+}
+
+body.item .btn.lg span span {
+	position: relative;
+	top: 1px;
+	left: 1px;
+	display: inline-block;
+	width: 9px;
+	height: 7px;
+	background: url('../img/new/sp-btn-expand.jpg') left top no-repeat;
+}
+
+body.item .btn.lg:hover span span {
+	background-position: left -7px;
+}
+
+body.item .btn.lg span span.contract {
+	background-position: left -14px;
+}
+
+body.item .btn.lg:hover span span.contract {
+	background-position: left -21px;
+}
+
+body.item .wide h5 {
+	margin: 40px 0 20px;
+	width: 436px;
+}
+
+body.item .wide ul {
+	margin: 20px 0 20px 15px;
+	width: 436px;
+}
+
+body.item .wide ul li {
+	list-style: disc;
+	line-height: 23px;
+	padding-left: 3px;
+}
+
+body.item .wide p {
+	font-size: 13px;
+	line-height: 23px;
+	margin: 20px 0;
+	width: 436px;
+}
+
+body.item .narr {
+	padding-top: 25px;
+	background: url('../img/bg-corner-shad-short.png') left top no-repeat;
+}
+
+body.item #download {
+	height: 117px;
+}
+
+body.item #download h4.btn,
+body.item #download h4.btn a {
+	border-left: none !important;
+	moz-border-radius-topleft: 0 !important;
+	webkit-border-top-left-radius: 0 !important;
+	border-top-left-radius: 0 !important;
+	moz-border-radius-bottomleft: 0 !important;
+	webkit-border-bottom-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+body.item #download h4.btn {
+	background-image: url('../img/bg-getquote-brdr.png') !important;
+	background-position: 0 0 !important;
+	background-repeat: no-repeat !important;
+	margin: 23px 0 24px !important;
+}
+
+body.item #download h4.btn a {
+	color: #10374e !important;
+	background-image: url('../img/btn-h4btn-shadow.png') !important;
+	background-position: right top !important;
+	background-repeat: no-repeat !important;
+	border-top: none !important;
+	font-size: 31px !important;
+	font-family: "ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif !important;
+	height: 69px !important;
+	line-height: 76px !important;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 #fff !important;
+}
+
+body.item #download.two-line h4.btn a {
+	padding-top: 14px !important;
+	padding-left: 20px !important;
+	height: 56px !important;
+	font-family: "ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif !important;
+	font-size: 22px !important;
+	text-align: left !important;
+	line-height: 23px !important;
+}
+
+body.item #download.two-line h4.btn a span {
+	display: block;
+	font-size: 19px !important;
+}
+
+body.item #download.two-line h4.btn a span span {
+	display: inline;
+	font-family: "Lucida Grande","Lucida Sans Unicode",verdana,arial,helvetica,clean,sans-serif;
+}
+
+body.item #tweets {
+	padding: 25px 0 25px 20px;
+}
+
+body.item #tweets h5 {
+	width: 185px;
+	font-family: "ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	font-size: 16px;
+	color: #252525;
+	background: url('../img/new/bg-twitter-icon.png') right top no-repeat;
+	margin: 0;
+}
+
+body.item #tweets blockquote {
+	padding: 11px 0;
+}
+
+body.item #tweets blockquote p,body.item #tweets blockquote cite {
+	font-size: 12px;
+	font-style: italic;
+	color: #fff;
+	line-height: 22px;
+	padding-bottom: 7px;
+}
+
+body.item #tweets blockquote cite {
+	color: #1d2f3b;
+	font-weight: normal;
+}
+
+body.item .reader {
+	padding: 30px 35px 90px;
+}
+
+body.item .reader h3 {
+	font-family: "ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	color: #fff;
+	font-size: 38px;
+	text-shadow: 1px 1px 1px #2a6a90;
+	margin: 0 0 25px 4px;
+}
+
+body.item .reader .brd {
+	background: #28678e;
+	padding: 20px 11px;
+	webkit-border-radius: 6px;
+	moz-border-radius: 6px;
+	border-radius: 6px;
+	width: 673px;
+}
+
+body.item .reader .wrap {
+	width: 673px;
+	height: 378px;
+	background: #215273;
+	webkit-border-radius: 6px;
+	moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+body.item .reader .controls,body.item .reader .pages {
+	float: left;
+	height: 378px;
+}
+
+body.item .reader .controls {
+	width: 26px;
+}
+
+body.item .reader .controls a:hover {
+	background-color: #163E58;
+}
+
+body.item .reader .controls a {
+	display: block;
+	text-indent: -9999em;
+	width: 26px;
+	position: relative;
+}
+
+body.item .reader .controls a span {
+	display: block;
+	background-image: url('../img/new/sp-reader-controls.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 12px;
+}
+
+body.item .reader .controls a.first,body.item .reader .controls a.last {
+	margin-top: 4px;
+	height: 44px;
+}
+
+body.item .reader .controls a.first span,body.item .reader .controls a.last span {
+	height: 12px;
+	top: 16px;
+}
+
+body.item .reader .controls a.prev,body.item .reader .controls a.next {
+	height: 327px;
+}
+
+body.item .reader .controls a.prev span,body.item .reader .controls a.next span {
+	height: 15px;
+	top: 127px;
+}
+
+body.item .reader .controls a.last span {
+	left: 9px;
+	background-position: 0 0;
+}
+
+body.item .reader .controls a.last:hover span {
+	background-position: -12px 0;
+}
+
+body.item .reader .controls a.first span {
+	left: 6px;
+	background-position: -24px 0;
+}
+
+body.item .reader .controls a.first:hover span {
+	background-position: -36px 0;
+}
+
+body.item .reader .controls a.next span {
+	left: 9px;
+	background-position: -60px 0;
+}
+
+body.item .reader .controls a.next:hover span {
+	background-position: -48px 0;
+}
+
+body.item .reader .controls a.prev span {
+	left: 6px;
+	background-position: -84px 0;
+}
+
+body.item .reader .controls a.prev:hover span {
+	background-position: -72px 0;
+}
+
+body.item .reader .controls a.prev,body.item .reader .controls a.first {
+	width: 25px;
+}
+
+body.item .reader .pages {
+	width: 620px;
+	position: relative;
+	text-decoration: none;
+}
+
+body.item .reader .pages span {
+	color: #fff;
+	font-size: 12px;
+	height: 43px;
+	line-height: 43px;
+	width: 141px;
+	text-align: center;
+	background: rgba(0,0,0,0.4);
+	webkit-border-radius: 6px;
+	moz-border-radius: 6px;
+	border-radius: 6px;
+	position: absolute;
+	top: 162px;
+	left: 240px;
+}
+
+body.item .reader .pages:hover span {
+	display: block !important;
+}
+
+body.item #buy-box {
+	padding: 25px 0 25px 511px;
+	position: relative;
+}
+
+body.item #buy-box .art {
+	position: absolute;
+	top: -32px;
+	left: 223px;
+	z-index: 1;
+}
+
+body.item #buy-box .badge {
+	position: absolute;
+	top: -17px;
+	left: 412px;
+	z-index: 100;
+	display: block;
+	text-indent: -9999em;
+	width: 127px;
+	height: 133px;
+	background: url('../img/new/bg-badge.png') left top no-repeat;
+}
+
+body.item #buy-box h5 {
+	float: left;
+	width: 208px;
+	padding-right: 30px;
+	height: 100px;
+	background: url('../img/new/bg-btn-bump.png') right top no-repeat;
+	text-align: right;
+	font-size: 96px;
+	color: #fff;
+	font-family: "ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;
+	text-shadow: 2px 2px 1px #4483a8;
+	line-height: 110px;
+	letter-spacing: -0.04em;
+	font-weight: bold;
+}
+
+body.item #buy-box h5 span {
+	font-size: 60px;
+	position: relative;
+	top: -10px;
+	left: -5px;
+	font-family: "ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;
+	font-weight: normal;
+}
+
+body.item #buy-box .buy-btn {
+	float: left;
+	width: 165px;
+	height: 86px;
+	padding-top: 14px;
+	background: url('../img/new/bg-btn-shd.png') left top no-repeat;
+}
+
+body.item #buy-box h4.btn,
+body.item #buy-box h4.btn a {
+	border-left: none !important;
+	moz-border-radius-topleft: 0 !important;
+	webkit-border-top-left-radius: 0 !important;
+	border-top-left-radius: 0 !important;
+	moz-border-radius-bottomleft: 0 !important;
+	webkit-border-bottom-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+body.item #buy-box h4.btn {
+	background-image: url('../img/bg-getquote-brdr.png') !important;
+	background-position: 0 0 !important;
+	background-repeat: no-repeat !important;
+	margin: 0 !important;
+}
+
+body.item #buy-box h4.btn a {
+	color: #10374e !important;
+	background-image: url('../img/btn-h4btn-shadow.png') !important;
+	background-position: 0 0 !important;
+	background-repeat: no-repeat !important;
+	border-top: none !important;
+	font-size: 24px !important;
+	font-family: "ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif !important;
+	height: 61px !important;
+	line-height: 69px !important;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 #fff !important;
+	text-transform: uppercase;
+}
+
+body.item #buy-box ul {
+	clear: both;
+	padding: 20px 0;
+	margin-left: 15px;
+	width: 436px;
+}
+
+body.item #buy-box ul li {
+	list-style: disc;
+	line-height: 23px;
+	padding-left: 3px;
+}
+
+body.item #ask {
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+body.item #ask h3 {
+	font-family: "ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	color: #fff;
+	font-size: 38px;
+	text-shadow: 1px 1px 1px #2a6a90;
+	margin: 0 0 20px 0;
+}
+
+body.item #ask p {
+	font-size: 14px;
+	line-height: 24px;
+	width: 325px;
+}
+
+body.item #ask .col2.right {
+	padding: 0 0 0 4px;
+	width: 346px;
+}
+
+body.item #ask form .box {
+	margin-bottom: 5px;
+}
+
+body.item #ask form .textarea textarea {
+	width: 316px;
+}
+
+body.item #ask form .submit {
+	padding: 10px 55px;
+	height: 35px;
+}
+
+body.item #author .wide,body.item #author .narr {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+body.item #author h5 {
+	font-family: "ITCLubalinGraphBook",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	color: #fff;
+	font-size: 24px;
+	text-shadow: 1px 1px 0 #2a6a90;
+	margin: 30px 0 0 0;
+	font-weight: normal;
+}
+
+body.item #author p.sub-title {
+	font-size: 13px;
+	color: #144460;
+	margin: 0;
+}
+
+body.item #author p.bio {
+	padding: 20px 0 25px;
+	margin: 0;
+	color: #fff;
+	text-shadow: 1px 1px 0 #3d799d;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+body.item #author p.bio .photo {
+	display: block;
+	float: left;
+	margin: 6px 10px 10px 0;
+	border: 1px solid #2a688a;
+	background: #287baa;
+	padding: 5px;
+}
+
+body.item #author .narr .shadow {
+	padding-top: 25px;
+}
+
+body.item #other .col2 {
+	padding-top: 50px;
+}
+
+body.item #other .col2 h5 {
+	color: #252525;
+	font-family: "ITCLubalinGraphMedium",Rockwell,"Trebuchet MS","Gill Sans",Lucida Grande,Arial,sans-serif;
+	font-size: 22px;
+}
+
+body.item #other .col2 p.text {
+	font-size: 13px;
+	line-height: 23px;
+	width: 325px;
+	margin: 5px 0 20px;
+}
+
+body.item #other .left {
+	width: 392px !important;
+	margin-bottom: 10px;
+}
+
+body.item #other .right {
+	height: 265px;
+	width: 300px;
+	padding-left: 0;
+	position: relative;
+	background: url('../img/new/ftr-oprah.png') 50% 100px no-repeat;
+}
+
+body.item #other .right h5 {
+	text-align: right;
+}
+
+body.item #other .right a.btn {
+	font-family: "ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;
+	font-size: 18px;
+	color: #146292;
+	line-height: 47px;
+	height: 42px;
+	width: 116px;
+	text-align: center;
+	background: #fff;
+	moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.2),0 0 10px rgba(0,0,0,0.4);
+	webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2),0 0 10px rgba(0,0,0,0.4);
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.2),0 0 10px rgba(0,0,0,0.4);
+	text-shadow: none;
+	position: absolute;
+	left: 114px;
+	top: 238px;
+}
+
+body.item #other .right a.btn:hover {
+	background-color: #cff0fa;
+	color: #0c4a71;
+}
+
+body.item #other .right a.btn:active {
+	top: 239px;
+	moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.2),0 0 5px rgba(0,0,0,0.4);
+	webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2),0 0 5px rgba(0,0,0,0.4);
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.2),0 0 5px rgba(0,0,0,0.4);
+}
+
+body.item .book {
+	padding: 25px 0 35px;
+}
+
+body.item .book .art {
+	float: left;
+	margin-right: 12px;
+}
+
+body.item #other .book h5 {
+	margin-top: 4px;
+	font-weight: bold;
+	color: #144460;
+	font-size: 19px;
+	font-family: "ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif;
+	line-height: 19px;
+}
+
+body.item #other .book h5 small {
+	font-size: 11px;
+	display: block;
+}
+
+body.item .book p {
+	margin: 5px 0 12px;
+	line-height: 22px;
+	font-size: 12px;
+	width: 340px;
+}
+
+body.item .book a.btn {
+	width: 190px;
+}
+
+body.item .hdash.mr {
+	margin-right: 10px;
+}
+
+
+/* new styles */
+
+html.mobile body{
+background-position-y:-145px;
+}
+html.mobile #tab .top{
+    height: 70px;
+}
+html.mobile #wrap{
+    min-height: 100%;
+}
+html.mobile #tab{
+    position: absolute !important;
+    top:0px !important;
+}
+
+
+body.default .col2.wide.vdash form input[type="text"]{
+    display: block;
+    width: 96%;
+    height: 18px;
+    padding: 7px 0 7px 9px;
+    background: url('../img/bg-input-std-left.png') no-repeat scroll top right;
+    height: 18px;
+    font-size: 12px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+body.default .col2.wide.vdash form .btn{
+    display: inline-block;
+}
+body.default .col2.wide.vdash form input[type="submit"]{
+    border: 5px solid #2A6B92;
+    -moz-border-radius: 7px !important;
+    -webkit-border-radius: 7px !important;
+    border-radius: 7px !important;
+    margin: 0;
+    padding: 0;
+    cursor:pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block !important;
+    background: #f3ed87 url('../img/gr-yellow.png') repeat-x scroll center left !important;
+    height: 48px !important;
+    line-height: 52px !important;
+    color: #144460 !important;
+    font-size: 22px !important;
+    font-family: "ff-meta-web-pro","Gill Sans","Trebuchet MS",Calibri,Arial,sans-serif !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    text-shadow: #fff 1px 1px 1px !important;
+    border-top: 1px solid #fdfad5 !important;
+    border-left: 1px solid #fdfad5 !important;
+    border-right: 1px solid #c9c662 !important;
+    border-bottom: 1px solid #c9c662 !important;
+    -moz-border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    border-radius: 5px !important;
+}
+
+#wrap{
+    padding-top: 0;
+}
+
+#sb{
+    /*margin-top: 220px;*/
+}
