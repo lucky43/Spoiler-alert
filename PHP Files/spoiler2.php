@@ -59,11 +59,11 @@
 
     <!-- Carousel
     ================================================== -->
-<?php $query = "select title from Movies"; ?>
+<?php $query = "select title from movies"; ?>
 <?php $result=mysql_query($query) ?>
 <?php $array = mysql_fetch_array($result); ?>
 
-<?php $query2  = "select spoiler from Movies"; ?>
+<?php $query2  = "select spoiler from movies"; ?>
 <?php $result2 = mysql_query($query2) ?>
 <?php $content = mysql_fetch_array($result); ?>
 
@@ -72,7 +72,7 @@
 
       <div class="row centered">
         <div class="col-lg-8 col-lg-offset-2" ng-hide="loginObj.user">
-          <h4><?php echo $array[0] ?></h4>
+          <h4><?php echo $array[1] ?></h4>
           
         </div>
       </div><!-- row -->
