@@ -24,3 +24,7 @@ title varchar(255),
 spoiler text
 );
 
+UPDATE Movies
+SET id = 1
+WHERE title = 'FightClub'
+

@@ -59,31 +59,32 @@
 
     <!-- Carousel
     ================================================== -->
-<?php $query = "select title from Movies"; ?>
+<?php $query = "select * from Movies where id =1"; ?>
 <?php $result=mysql_query($query) ?>
 <?php $array = mysql_fetch_array($result); ?>
 
 <?php $query2  = "select spoiler from Movies"; ?>
 <?php $result2 = mysql_query($query2) ?>
-<?php $content = mysql_fetch_array($result); ?>
+<?php $content = mysql_fetch_array($result2); ?>
 
    <div id="blue">
     <div class="container">
 
-      <div class="row centered">
-        <div class="col-lg-8 col-lg-offset-2" ng-hide="loginObj.user">
-          <h4><?php echo $array[0] ?></h4>
-          
-        </div>
-      </div><!-- row -->
+      
     </div><!-- container -->
   </div><!--  bluewrap -->
 
   <div class="container desc">
+    <div class="row centered">
+        <div class="col-lg-8 col-lg-offset-2" ng-hide="loginObj.user">
+          <h4><?php echo $array[1] ?></h4>
+          
+        </div>
+      </div><!-- row -->
     <div class="row" ng-hide="loginObj.user">
       <br><br>      
       <div class="col-lg-6 col-lg-offset-3 ">
-         <p><?php echo $content[1] ?>
+         <p><?php echo $array[2] ?>
       </div>
     </div> <!-- /.row -->
     
