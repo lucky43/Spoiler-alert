@@ -67,26 +67,20 @@
     
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <img src="../CSS/theater.jpg" alt="First slide"> -->
           <div class="container">
             <div class="carousel-caption">
               <h1>Movies</h1>
               <p>This page contains movie spoilers</p>
+              <p>Choose a spoiler below or</p>
+              <p><a class="btn btn-lg btn-primary" href="create.php" role="button">Create Your Own</a></p>
              
             </div>
           </div>
         </div>
-       
       </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
+    </div>
+     <!-- /.carousel -->
 
 
     <!-- Marketing messaging and featurettes
@@ -101,13 +95,13 @@
           <img class="img-circle" src="../css/movie.jpg" style="width: 140px; height: 140px;">
            <h2><a href="#"><?php echo $array[0] ?></a></h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">Spoil &raquo;</a></p>
+          <p><a class="btn btn-default" href="spoiler1.php" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2><a href="#"><?php echo $array[0] ?></a></h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">Spoil &raquo;</a></p>
+          <p><a class="btn btn-default" href="spoiler2.php" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
