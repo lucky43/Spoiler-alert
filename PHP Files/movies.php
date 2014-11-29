@@ -30,9 +30,18 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <?php $query = "select title from movies"; ?>
+    <?php $query = "select title from movies where id =1"; ?>
 <?php $result=mysql_query($query) ?>
 <?php $array = mysql_fetch_array($result); ?>
+
+<?php $query2 = "select title from movies where id =3"; ?>
+<?php $result2=mysql_query($query2) ?>
+<?php $array2 = mysql_fetch_array($result2); ?>
+
+<?php $query3 = "select title from movies where id =4"; ?>
+<?php $result3=mysql_query($query3) ?>
+<?php $array3 = mysql_fetch_array($result3); ?>
+
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -92,22 +101,22 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="../css/movie.jpg" style="width: 140px; height: 140px;">
-           <h2><a href="#"><?php echo $array[0] ?></a></h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="spoiler1.php" role="button">Spoil &raquo;</a></p>
+          <img class="img-circle" src="../css/fightclub.jpg" style="width: 140px; height: 140px;">
+           <h2><?php echo $array[0] ?></a></h2>
+          <p>A nameless first person Narrator opens the movie with a gun being held in his mouth by a man named Tyler Durden. However he decides that its best if the story starts from the beginning. The narrator explains that he is an insomniac. He is seen working his dead end, boring, desk job, and having many a sleepless night.</p>
+          <p><a class="btn btn-default" href="fightclub.php" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2><a href="#"><?php echo $array[0] ?></a></h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="spoiler2.php" role="button">Spoil &raquo;</a></p>
+          <img class="img-circle" src="../css/frozen.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2><?php echo $array2[0] ?></a></h2>
+          <p>In Frozen, Elsa, the princess of Arendelle has the magic ability to create snow and ice at will. One night she is playing with her younger sister, Anna, when she accidentally strikes her in the head with a beam of this magic. Their parents take the injured Anna to a troll family, where a troll shaman removes the harmful effects of the magic</p>
+          <p><a class="btn btn-default" href="frozen.php" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Movie 3</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">Spoil &raquo;</a></p>
+          <img class="img-circle" src="../css/shaunofthedead.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2><?php echo $array3[0] ?></a></h2>
+          <p> Shaun, the movie’s protagonist, is in a dead end job in a local electronics shop. He lives with his best friend Ed, and another man named Pete. Pete hates Ed. Naturally this means he and Shaun often butt heads. Shaun’s girlfriend, Liz, desires more from the couple’s social life, and relationship as a whole.</p>
+          <p><a class="btn btn-default" href="shaun.php" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
