@@ -47,11 +47,11 @@ UPDATE classics
 SET id = 2
 WHERE title = ‘Sixth Sense’
 
-
 Insert into classics(id, title, spoiler)
 Values(3, 'Soylent Green', 'Soylent Green is people.')
 
-
+Insert into classics(id, title, spoiler)
+Values(4, 'The Prestige', 'Christian Bale isn\'t using Tesla\'s cloning machine like Hugh Jackman thinks. He has just had a twin brother the whole time.')
 
 
 
