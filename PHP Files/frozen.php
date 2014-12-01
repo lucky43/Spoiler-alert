@@ -39,12 +39,12 @@
             <div class="navbar-header">
               
               
-              <a class="navbar-brand" href="#">Spoiler Alert</a>
+              <a class="navbar-brand" href="landing.html">Spoiler Alert</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
 
-                <li><a href="movies.html">Movies</a></li>
+                <li><a href="movies.php">Movies</a></li>
                 <li><a href="tv.html">TV</a></li>
                 <li><a href='classics.html'>Classics</a></li>
                 <li><a href='videogames.html'>Video Games</a></li>

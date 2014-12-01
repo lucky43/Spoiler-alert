@@ -39,7 +39,7 @@
             <div class="navbar-header">
               
               
-              <a class="navbar-brand" href="#">Spoiler Alert</a>
+              <a class="navbar-brand" href="landing.html">Spoiler Alert</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
