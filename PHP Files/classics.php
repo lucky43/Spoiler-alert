@@ -1,4 +1,6 @@
 <?php require_once 'config.php';?>
+<!--classics.html-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +11,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>Classics</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -30,22 +32,6 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <?php /**
- * This section is where we grab the spoilers from the movies table
- */
-
-    $query = "select title from movies where id =1";  ?>
-<?php $result=mysql_query($query) ?>
-<?php $array = mysql_fetch_array($result); ?>
-
-<?php $query2 = "select title from movies where id =3"; ?>
-<?php $result2=mysql_query($query2) ?>
-<?php $array2 = mysql_fetch_array($result2); ?>
-
-<?php $query3 = "select title from movies where id =4"; ?>
-<?php $result3=mysql_query($query3) ?>
-<?php $array3 = mysql_fetch_array($result3); ?>
-
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -58,10 +44,10 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                
-                <li class="active"><a href="movies.php">Movies</a></li>
+
+                <li><a href="movies.php">Movies</a></li>
                 <li><a href="tv.php">TV</a></li>
-                <li><a href='classics.php'>Classics</a></li>
+                <li class = "active"><a href='classics.php'>Classics</a></li>
                 <li><a href='videogames.php'>Video Games</a></li>
             
               </ul>
@@ -80,55 +66,88 @@
     
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="../CSS/theater.jpg" alt="First slide"> -->
+          <img src="../css/classics.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Movies</h1>
-              <p>This page contains movie spoilers</p>
-              <p>Choose a spoiler below or</p>
-              <p><a class="btn btn-lg btn-primary" href="create.php" role="button">Create Your Own</a></p>
+              <h1>Classics</h1>
+              <p>Classic spoilers</p>
              
             </div>
           </div>
         </div>
+       
       </div>
-    </div>
-     <!-- /.carousel -->
+    </div><!-- /.carousel -->
 
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
+<?php 
+/**
+ * This section is where we grab the spoilers from the classics table
+ */
+$query = "select * from classics where id =1"; 
+ $result=mysql_query($query);
+ $array = mysql_fetch_array($result); 
+
+ $query2 = "select * from classics where id =2"; 
+ $result2=mysql_query($query2);
+ $array2 = mysql_fetch_array($result2); 
+
+ $query3 = "select * from classics where id =3"; 
+ $result3=mysql_query($query3);
+ $array3 = mysql_fetch_array($result3); 
+
+ $query4 = "select * from classics where id =4"; 
+ $result4 =mysql_query($query4); 
+ $array4 = mysql_fetch_array($result4); 
+
+?>
 
     <div class="container marketing">
+    
+       <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <h1><?php echo $array[1] ?></h1>
+          <br>
+          <p><?php echo $array[2] ?></p>
+  </div>
+      </div>
 
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="../css/fightclub.jpg" style="width: 140px; height: 140px;">
-           <h2><?php echo $array[0] ?></a></h2>
-          <p>A nameless first person Narrator opens the movie with a gun being held in his mouth by a man named Tyler Durden. However he decides that its best if the story starts from the beginning. The narrator explains that he is an insomniac. He is seen working his dead end, boring, desk job, and having many a sleepless night.</p>
-          <p><a class="btn btn-default" href="fightclub.php" role="button">Spoil &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="../css/frozen.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2><?php echo $array2[0] ?></a></h2>
-          <p>In Frozen, Elsa, the princess of Arendelle has the magic ability to create snow and ice at will. One night she is playing with her younger sister, Anna, when she accidentally strikes her in the head with a beam of this magic. Their parents take the injured Anna to a troll family, where a troll shaman removes the harmful effects of the magic</p>
-          <p><a class="btn btn-default" href="frozen.php" role="button">Spoil &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="../css/shaunofthedead.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2><?php echo $array3[0] ?></a></h2>
-          <p> Shaun, the movie’s protagonist, is in a dead end job in a local electronics shop. He lives with his best friend Ed, and another man named Pete. Pete hates Ed. Naturally this means he and Shaun often butt heads. Shaun’s girlfriend, Liz, desires more from the couple’s social life, and relationship as a whole.</p>
-          <p><a class="btn btn-default" href="shaun.php" role="button">Spoil &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+       <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <h1><?php echo $array2[1] ?></h1>
+          <br>
+          <p><?php echo $array2[2] ?></p>
+  </div>
+      </div>
 
+       <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <h1><?php echo $array3[1] ?></h1>
+          <br>
+          <p><?php echo $array3[2] ?></p>
+  </div>
 
-
+     <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <h1><?php echo $array4[1] ?></h1>
+          <br>
+          <p><?php echo $array4[2] ?></p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+      </div>
+    
 
       <!-- FOOTER -->
       <footer>
+        <br>
+        <br>
+        <br>
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
