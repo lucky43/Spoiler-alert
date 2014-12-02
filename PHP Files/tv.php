@@ -83,6 +83,28 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
+  <body>
+    <?php /**
+ * This section is where we grab the spoilers from the movies table
+ */
+ 
+ /** Selects title from Movie database */
+ $query = "select title from tv where id =1";   
+ $result=mysql_query($query); 
+ /** title of show id=1 */ 
+ $tv = mysql_fetch_array($result); 
+
+ /** Selects title from Movie database */
+ $query2 = "select title from tv where id =2"; 
+ $result2=mysql_query($query2); 
+ /* title of show id=2 */ 
+ $tv2 = mysql_fetch_array($result2); 
+
+/** Selects title from Movie database */
+ $query3 = "select title from tv where id =3";  
+ $result3=mysql_query($query3); 
+ /** title of Show id=3 */
+ $tv3 = mysql_fetch_array($result3); ?>
 
     <div class="container marketing">
 
@@ -91,7 +113,7 @@
         <div class="col-lg-4">
 
           <img class="img-circle" src="../css/walkingdead1.jpg" style="width: 140px; height: 140px;">
-          <h2>Walking Dead: Season 1</h2>
+          <h2><?php $tv[0] ?></h2>
 
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><a class="btn btn-default" href="walkingdead1.html" role="button">Spoil &raquo;</a></p>
@@ -99,14 +121,14 @@
         <div class="col-lg-4">
           <img class="img-circle" src="../css/walkingdead2.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
 
-          <h2>Walking Dead: Season 2</h2>
+          <h2><?php $tv2[0] ?></h2>
 
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="btn btn-default" href="walkingdead2.html" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="../css/walkingdead3.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Walking Dead: Season 3</h2>
+          <h2><?php $tv3[0] ?></h2>
 
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="walkingdead3.html" role="button">Spoil &raquo;</a></p>

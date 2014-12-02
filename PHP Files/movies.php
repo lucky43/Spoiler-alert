@@ -33,18 +33,24 @@
     <?php /**
  * This section is where we grab the spoilers from the movies table
  */
+ 
+ /** Selects title from Movie database */
+ $query = "select title from movies where id =1";   
+ $result=mysql_query($query); 
+ /** title of Movie */ 
+ $movies = mysql_fetch_array($result); 
 
-      $query = "select title from movies where id =1";  /* Selects title from Movie database */?> 
-<?php $result=mysql_query($query) ?>
-<?php $movies = mysql_fetch_array($result); /* title of Movie */ ?>
+ /** Selects title from Movie database */
+ $query2 = "select title from movies where id =3"; 
+ $result2=mysql_query($query2); 
+ /* title of Movie */ 
+ $movies2 = mysql_fetch_array($result2); 
 
-<?php $query2 = "select title from movies where id =3"; /* Selects title from Movie database */?>
-<?php $result2=mysql_query($query2) ?>
-<?php $movies2 = mysql_fetch_array($result2); /* title of Movie */ ?>
-
-<?php $query3 = "select title from movies where id =4"; /* Selects title from Movie database */ ?>
-<?php $result3=mysql_query($query3) ?>
-<?php $movies3 = mysql_fetch_array($result3); /* title of Movie */?>
+/** Selects title from Movie database */
+ $query3 = "select title from movies where id =4";  
+ $result3=mysql_query($query3); 
+ /** title of Movie */
+ $movies3 = mysql_fetch_array($result3); ?>
 
     <div class="navbar-wrapper">
       <div class="container">

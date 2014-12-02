@@ -83,6 +83,28 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
+     <body>
+    <?php /**
+ * This section is where we grab the spoilers from the movies table
+ */
+ 
+  /** Selects title from Movie database */
+  $query = "select title from videogames where id =1";   
+  $result=mysql_query($query); 
+  /** title of Movie */ 
+  $game = mysql_fetch_array($result); 
+
+  /** Selects title from Movie database */
+  $query2 = "select title from videogames where id =3"; 
+  $result2=mysql_query($query2); 
+  /* title of Movie */ 
+  $game2 = mysql_fetch_array($result2); 
+
+  /** Selects title from Movie database */
+  $query3 = "select title from videogames where id =4";  
+  $result3=mysql_query($query3); 
+  /** title of Movie */
+  $game3 = mysql_fetch_array($result3); ?>
 
     <div class="container marketing">
 
@@ -92,25 +114,25 @@
 
           <img class="img-circle" src="../css/bioshock.jpg" style="width: 140px; height: 140px;">
 
-          <h2>Bioshock</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="bioshock.html" role="button">Spoil &raquo;</a></p>
+          <h2><?php $game[0] ?></h2>
+          <p>You are playing as the silent protagonist Jack. The game opens with Jack on a plane flying over the Atlantic in the year 1960. Naturally the plane crashes, and Jack finds himself in the middle of the Atlantic, </p>
+          <p><a class="btn btn-default" href="bioshock.php" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="../css/fallout3.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
 
-          <h2>Fallout 3</h2>
+          <h2><?php $game2[0] ?></h2>
 
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="fallout3.html" role="button">Spoil &raquo;</a></p>
+          <p>Fallout 3 features the player as the protagonist, born in a vault in post apocalyptic America. A nuclear war 200 years prior with China has left the USA pretty much totally decimated.</p>
+          <p><a class="btn btn-default" href="fallout3.php" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="../css/braid.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
 
-          <h2>Braid</h2>
+          <h2><?php $game3[0] ?></h2>
 
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="braid.html" role="button">Spoil &raquo;</a></p>
+          <p>Braid is an indie game centered around the protagonist, Tim. Tim is searching for a Princess that was...</p>
+          <p><a class="btn btn-default" href="braid.php" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 

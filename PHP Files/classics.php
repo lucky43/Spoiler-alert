@@ -89,19 +89,23 @@
  */
  $query = "select * from classics where id =1"; 
  $result=mysql_query($query);
- $classics = mysql_fetch_array($result); /* array of info from classics table */
+ /** array of info from classics table id=1 */
+ $classics = mysql_fetch_array($result); 
 
  $query2 = "select * from classics where id =2"; 
  $result2=mysql_query($query2);
- $classics2 = mysql_fetch_array($result2); /* array of info from classics table */
+ /** array of info from classics table id=2 */
+ $classics2 = mysql_fetch_array($result2); 
 
  $query3 = "select * from classics where id =3"; 
  $result3=mysql_query($query3);
- $classics3 = mysql_fetch_array($result3); /* array of info from classics table */
+ /** array of info from classics table id=3 */
+ $classics3 = mysql_fetch_array($result3); 
 
  $query4 = "select * from classics where id =4"; 
  $result4 =mysql_query($query4); 
- $classics4 = mysql_fetch_array($result4); /* array of info from classics table */
+ /** array of info from classics table id=4*/
+ $classics4 = mysql_fetch_array($result4); 
 
 ?>
 
