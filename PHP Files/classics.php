@@ -87,21 +87,21 @@
 /**
  * This section is where we grab the spoilers from the classics table
  */
-$query = "select * from classics where id =1"; 
+ $query = "select * from classics where id =1"; 
  $result=mysql_query($query);
- $array = mysql_fetch_array($result); 
+ $classics = mysql_fetch_array($result); /* array of info from classics table */
 
  $query2 = "select * from classics where id =2"; 
  $result2=mysql_query($query2);
- $array2 = mysql_fetch_array($result2); 
+ $classics2 = mysql_fetch_array($result2); /* array of info from classics table */
 
  $query3 = "select * from classics where id =3"; 
  $result3=mysql_query($query3);
- $array3 = mysql_fetch_array($result3); 
+ $classics3 = mysql_fetch_array($result3); /* array of info from classics table */
 
  $query4 = "select * from classics where id =4"; 
  $result4 =mysql_query($query4); 
- $array4 = mysql_fetch_array($result4); 
+ $classics4 = mysql_fetch_array($result4); /* array of info from classics table */
 
 ?>
 
@@ -109,32 +109,32 @@ $query = "select * from classics where id =1";
     
        <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
-          <h1><?php echo $array[1] ?></h1>
+          <h1><?php echo $classics[1] ?></h1>
           <br>
-          <p><?php echo $array[2] ?></p>
+          <p><?php echo $classics[2] ?></p>
   </div>
       </div>
 
        <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
-          <h1><?php echo $array2[1] ?></h1>
+          <h1><?php echo $classics2[1] ?></h1>
           <br>
-          <p><?php echo $array2[2] ?></p>
+          <p><?php echo $classics2[2] ?></p>
   </div>
       </div>
 
        <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
-          <h1><?php echo $array3[1] ?></h1>
+          <h1><?php echo $classics3[1] ?></h1>
           <br>
-          <p><?php echo $array3[2] ?></p>
+          <p><?php echo $classics3[2] ?></p>
   </div>
 
      <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
-          <h1><?php echo $array4[1] ?></h1>
+          <h1><?php echo $classics4[1] ?></h1>
           <br>
-          <p><?php echo $array4[2] ?></p>
+          <p><?php echo $classics4[2] ?></p>
   </div>
   <br>
   <br>

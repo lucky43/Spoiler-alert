@@ -34,17 +34,17 @@
  * This section is where we grab the spoilers from the movies table
  */
 
-    $query = "select title from movies where id =1";  ?>
+      $query = "select title from movies where id =1";  /* Selects title from Movie database */?> 
 <?php $result=mysql_query($query) ?>
-<?php $array = mysql_fetch_array($result); ?>
+<?php $movies = mysql_fetch_array($result); /* title of Movie */ ?>
 
-<?php $query2 = "select title from movies where id =3"; ?>
+<?php $query2 = "select title from movies where id =3"; /* Selects title from Movie database */?>
 <?php $result2=mysql_query($query2) ?>
-<?php $array2 = mysql_fetch_array($result2); ?>
+<?php $movies2 = mysql_fetch_array($result2); /* title of Movie */ ?>
 
-<?php $query3 = "select title from movies where id =4"; ?>
+<?php $query3 = "select title from movies where id =4"; /* Selects title from Movie database */ ?>
 <?php $result3=mysql_query($query3) ?>
-<?php $array3 = mysql_fetch_array($result3); ?>
+<?php $movies3 = mysql_fetch_array($result3); /* title of Movie */?>
 
     <div class="navbar-wrapper">
       <div class="container">
@@ -106,19 +106,19 @@
       <div class="row">
         <div class="col-lg-4">
           <img class="img-circle" src="../css/fightclub.jpg" style="width: 140px; height: 140px;">
-           <h2><?php echo $array[0] ?></a></h2>
+           <h2><?php echo $movies[0] ?></a></h2>
           <p>A nameless first person Narrator opens the movie with a gun being held in his mouth by a man named Tyler Durden. However he decides that its best if the story starts from the beginning. The narrator explains that he is an insomniac. He is seen working his dead end, boring, desk job, and having many a sleepless night.</p>
           <p><a class="btn btn-default" href="fightclub.php" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="../css/frozen.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2><?php echo $array2[0] ?></a></h2>
+          <h2><?php echo $movies2[0] ?></a></h2>
           <p>In Frozen, Elsa, the princess of Arendelle has the magic ability to create snow and ice at will. One night she is playing with her younger sister, Anna, when she accidentally strikes her in the head with a beam of this magic. Their parents take the injured Anna to a troll family, where a troll shaman removes the harmful effects of the magic</p>
           <p><a class="btn btn-default" href="frozen.php" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="../css/shaunofthedead.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2><?php echo $array3[0] ?></a></h2>
+          <h2><?php echo $movies3[0] ?></a></h2>
           <p> Shaun, the movie’s protagonist, is in a dead end job in a local electronics shop. He lives with his best friend Ed, and another man named Pete. Pete hates Ed. Naturally this means he and Shaun often butt heads. Shaun’s girlfriend, Liz, desires more from the couple’s social life, and relationship as a whole.</p>
           <p><a class="btn btn-default" href="shaun.php" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
