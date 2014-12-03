@@ -59,10 +59,38 @@ Values(2, 'Fallout 3', 'Fallout 3 features the player as the protagonist, born i
 Insert into videogames(id, title, spoiler)
 Values(3, 'Braid', 'Braid is an indie game centered around the protagonist, Tim. Tim is searching for a Princess that was \”Snatched by a horrible and evil monster\”. Tim and the princess\’s relationship is left intentionally very vague. Really the only thing the player knows for sure is that Tim has made a mistake. It is his goal to reconcile this mistake. In the last level of the game, a clever in game mechanic actually reveals that the Princess is running away from Tim. It turns out that Tim is the evil monster that the Princess is evading. At the end she is rescued from him by a knight. If the player completes the game in a certain way, hidden content is revealed. The hidden content hints at many possible meanings of the game. A popular theory is that Tim represents scientists working to develop the atomic bomb (The Princess). This theory seems highly plausible because of the quotes found in the hidden content. Namely \”Now we are all sons of bitches\” which was a direct quote from scientist Kenneth Bainbridge upon successfully detonating an atomic bomb.');
 
+Create table spoilers(
+id int,
+title varchar(255),
+catid int
+);
 
+Insert into spoilers(id, title, catid)
+Values(1, 'bioshock', 1);
 
+Insert into spoilers(id, title, catid)
+Values(2, 'Fallout 3', 2);
 
+Insert into spoilers(id, title, catid)
+Values(3, 'braid', 3);
 
+Insert into spoilers(id, title, catid)
+Values(4, 'WD1', 1);
+
+Insert into spoilers(id, title, catid)
+Values(5, 'WD2', 2);
+
+Insert into spoilers(id, title, catid)
+Values(6, 'WD3', 3);
+
+Insert into spoilers(id, title, catid)
+Values(7, 'Frozen', 2);
+
+Insert into spoilers(id, title, catid)
+Values(8, 'FightClub', 1);
+
+Insert into spoilers(id, title, catid)
+Values(9, 'Shaun', 3);
 
 
 
