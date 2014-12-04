@@ -1,4 +1,11 @@
-<?php require_once 'config.php';?>
+<?php require_once 'config.php';
+/**
+*@file
+*@brief Page for Fallout 3 spoiler
+*
+*/
+
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -67,7 +74,7 @@
      /** *Grab Fallout 3 info */
        $query = "select * from videogames where id =2"; 
        $result=mysql_query($query); 
-       $game = mysql_fetch_array($result); 
+       $fall = mysql_fetch_array($result); 
        ?>
      
      
@@ -78,7 +85,7 @@
           <img src="../css/fallout3.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1><?php echo $game[1] ?></h1>
+              <h1><?php echo $fall[1] ?></h1>
               <p>Fallout 3 spoiler</p>
              
             </div>
@@ -97,7 +104,7 @@
 
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
-          <p><?php echo $game[2] ?></p>
+          <p><?php echo $fall[2] ?></p>
 	</div>
       </div>
 

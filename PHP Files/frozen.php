@@ -1,4 +1,9 @@
-<?php require_once 'config.php';?>
+<?php require_once 'config.php';
+/**
+*@file
+*@brief Page for Frozen spoiler
+*/
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -56,9 +61,11 @@
 
       </div>
     </div>
-     <?php $query = "select * from Movies where id =3"; ?>
-     <?php $result=mysql_query($query) ?>
-      <?php $array = mysql_fetch_array($result); ?>
+     <?php 
+     /** Get info for Frozen */
+     $query = "select * from Movies where id =3"; 
+     $result=mysql_query($query) ?>
+     $frozen = mysql_fetch_array($result); ?>
 
     <!-- Carousel
     ================================================== -->
@@ -70,7 +77,7 @@
           <img src="../css/frozen.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1><?php echo $array[1] ?></h1>
+              <h1><?php echo $frozen[1] ?></h1>
               <p>Frozen spoiler</p>
              
             </div>
@@ -90,14 +97,16 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
-          <p> <?php echo $array[2] ?></p>
+          <p> <?php echo $frozen[2] ?></p>
 	</div>
       </div>
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <br>
+        <br>
+        <br>
+        <p>CSCI 3308</p>
       </footer>
 
     </div><!-- /.container -->

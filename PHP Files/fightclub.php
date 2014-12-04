@@ -1,4 +1,9 @@
-<?php require_once 'config.php';?>
+<?php require_once 'config.php';
+/**
+*@file
+*@brief Page for Fight Club Spoiler
+*/
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -62,13 +67,12 @@
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
-     <?php $query = "select * from Movies where id =1"; ?>
-     <?php $result=mysql_query($query) ?>
-      <?php $array = mysql_fetch_array($result); ?>
-     
-     <?php $query2 = "select * from nocontext where id =1"; ?>
-     <?php $result2=mysql_query($query2) ?>
-     <?php $nocon = mysql_fetch_array($result2); ?>
+     <?php 
+     /** Get fight club info */
+      $query = "select * from Movies where id =1"; 
+      $result=mysql_query($query);
+      $fight = mysql_fetch_array($result); 
+      ?>
 
       
       <div class="carousel-inner" role="listbox">
@@ -76,7 +80,7 @@
           <img src="../css/fightclub.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1><?php echo $array[1] ?></h1>
+              <h1><?php echo $fight[1] ?></h1>
               <p>Fight Club spoiler</p>
              
             </div>
@@ -95,14 +99,15 @@
 
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
-          <p><?php echo $array[2] ?></p>
+          <p><?php echo $fight[2] ?></p>
 	</div>
       </div>
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <br>
+        <br>
+        <p>CSCI 3308</p>
       </footer>
 
     </div><!-- /.container -->

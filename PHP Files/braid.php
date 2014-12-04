@@ -1,4 +1,10 @@
-<?php require_once 'config.php';?>
+<?php require_once 'config.php';
+/**
+*@file
+*@brief spoiler for braid
+*/
+
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -67,7 +73,7 @@
      /** *Grab Braid info */
        $query = "select * from videogames where id =3"; 
        $result=mysql_query($query); 
-       $game = mysql_fetch_array($result); 
+       $braid = mysql_fetch_array($result); 
        ?>
      
      
@@ -78,7 +84,7 @@
           <img src="../css/braid.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1><?php echo $game[1] ?></h1>
+              <h1><?php echo $braid[1] ?></h1>
               <p>Braid spoiler</p>
              
             </div>
@@ -97,7 +103,7 @@
 
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
-          <p><?php echo $game[2] ?></p>
+          <p><?php echo $braid[2] ?></p>
 	</div>
       </div>
 

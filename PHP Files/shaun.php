@@ -1,4 +1,9 @@
-<?php require_once 'config.php';?>
+<?php require_once 'config.php';
+/**
+*@file
+*@brief Page for shaun of the dead spoiler
+*/
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -56,9 +61,14 @@
 
       </div>
     </div>
-     <?php $query = "select * from Movies where id =4"; ?>
-     <?php $result=mysql_query($query) ?>
-      <?php $array = mysql_fetch_array($result); ?>
+     <?php 
+     /**
+     *get shaun of the dead info
+     */
+      $query = "select * from Movies where id =4"; 
+      $result=mysql_query($query) 
+      $shaun = mysql_fetch_array($result); 
+      ?>
 
     <!-- Carousel
     ================================================== -->
@@ -70,7 +80,7 @@
           <img src="../css/shaunofthedead.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1><?php echo $array[1] ?></h1>
+              <h1><?php echo $shaun[1] ?></h1>
               <p>Shaun of the Dead spoiler</p>
              
             </div>
@@ -90,7 +100,7 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
-          <p><?php echo $array[2] ?></p>
+          <p><?php echo $shaun[2] ?></p>
 	</div>
       </div>
 

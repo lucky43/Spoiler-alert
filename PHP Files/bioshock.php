@@ -1,4 +1,9 @@
-<?php require_once 'config.php';?>
+<?php require_once 'config.php';
+/**
+*@file
+*@brief Page for bioshock spoiler
+*/
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -67,7 +72,7 @@
      /** *Grab Bioshock info */
        $query = "select * from videogames where id =1"; 
        $result=mysql_query($query); 
-       $game = mysql_fetch_array($result); 
+       $bio = mysql_fetch_array($result); 
        ?>
      
      
@@ -78,7 +83,7 @@
           <img src="../css/bioshock.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1><?php echo $game[1] ?></h1>
+              <h1><?php echo $bio[1] ?></h1>
               <p>Bioshock spoiler</p>
              
             </div>
@@ -97,7 +102,7 @@
 
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
-          <p><?php echo $game[2] ?></p>
+          <p><?php echo $bio[2] ?></p>
 	</div>
       </div>
 
