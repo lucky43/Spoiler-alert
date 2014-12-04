@@ -1,4 +1,10 @@
-<?php require_once 'config.php';?>
+<?php require_once 'config.php';
+/**
+*@file
+*@brief Contains Movie Spoilers 
+*/
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

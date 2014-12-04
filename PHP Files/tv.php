@@ -1,5 +1,10 @@
-<?php require_once 'config.php';?>
-
+<?php require_once 'config.php';
+/**
+ *@file
+ *@brief This page is where we grab the Title of 3 spoilers from the tv table
+ * 
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -84,9 +89,8 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
   <body>
-    <?php /**
- * This section is where we grab the spoilers from the movies table
- */
+    <?php 
+
  
  /** Selects title from Movie database */
  $query = "select title from tv where id =1";   
@@ -113,24 +117,24 @@
         <div class="col-lg-4">
 
           <img class="img-circle" src="../css/walkingdead1.jpg" style="width: 140px; height: 140px;">
-          <h2><?php $tv[0] ?></h2>
+          <h2><?php echo $tv[0] ?></h2>
 
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p>Sheriff Deputy Rick Grimes is shot in a fight against criminals. He goes into a coma for some period of time. When he wakes up, something is clearly amiss. Cue zombie apocalypse.</p>
           <p><a class="btn btn-default" href="walkingdead1.html" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="../css/walkingdead2.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
 
-          <h2><?php $tv2[0] ?></h2>
+          <h2><?php echo $tv2[0] ?></h2>
 
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p>he second season begins with Rick and his group of survivors leaving Atlanta. They decide Fort Benning will be their next destination. Along the way, they encounter a traffic jam</p>
           <p><a class="btn btn-default" href="walkingdead2.html" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="../css/walkingdead3.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2><?php $tv3[0] ?></h2>
+          <h2><?php echo $tv3[0] ?></h2>
 
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p>Season 3 starts 8 and a half months after they escaped the farm, Lori being in the final days of her pregnancy. They discover a deserted prison and, while clearing it of walkers, Hershel is bitten by his leg.</p>
           <p><a class="btn btn-default" href="walkingdead3.html" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->

@@ -1,4 +1,10 @@
-<?php require_once 'config.php';?>
+<?php require_once 'config.php';
+/**
+*@file
+*@brief Inputs created spoiler into database
+*/
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -68,9 +74,9 @@
           <p>We appreciate your contribution!</p>
           <?php 
           
-              $name=$_POST["name"]; 
-              $cat=$_POST["Category"]; 
-              $spoil=$_POST["spoiler"];
+              $name=$_POST["name"]; /** name of spoiler */
+              $cat=$_POST["Category"]; /** Category of spoiler */
+              $spoil=$_POST["spoiler"]; /** Text of spoiler */
 
             mysql_query("INSERT into $cat(title, spoiler) VALUES('$name', '$spoil')");
 

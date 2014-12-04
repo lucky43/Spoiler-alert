@@ -1,4 +1,9 @@
-<?php require_once 'config.php';?>
+<?php require_once 'config.php';
+/**
+*@file
+*@brief Contains Classic Spoilers 
+*/
+?>
 <!--classics.html-->
 
 <!DOCTYPE html>

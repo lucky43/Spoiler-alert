@@ -1,4 +1,10 @@
-<?php require_once 'config.php';?>
+<?php require_once 'config.php';
+/**
+*@file
+*@brief allows user to submit their own spoiler
+*/
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -43,9 +49,9 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li><a href="movies.php">Movies</a></li>
-                <li><a href="tv.html">TV</a></li>
-                <li><a href='classics.html'>Classics</a></li>
-                <li><a href='videogames.html'>Video Games</a></li>
+                <li><a href="tv.php">TV</a></li>
+                <li><a href='classics.php'>Classics</a></li>
+                <li><a href='videogames.php'>Video Games</a></li>
             
               </ul>
             </div>

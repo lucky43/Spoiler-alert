@@ -1,4 +1,9 @@
 <?php
+/**
+*@file
+*@brief Connect to DB
+*/
+
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'SpoilerAlert');
 define('DB_USER','root');
