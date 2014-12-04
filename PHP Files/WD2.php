@@ -1,4 +1,9 @@
-<?php require_once 'config.php';?>
+<?php require_once 'config.php';
+/**
+*@file
+*@brief Page for season 3 spoiler
+*/
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +15,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Frozen</title>
+    <title>Season2</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -56,9 +61,12 @@
 
       </div>
     </div>
-     <?php $query = "select * from Movies where id =3"; ?>
-     <?php $result=mysql_query($query) ?>
-      <?php $array = mysql_fetch_array($result); ?>
+     <?php 
+     /** Select info for season 2 */
+     $query = "select * from tv where id =2"; 
+     $result=mysql_query($query);
+     $array = mysql_fetch_array($result); 
+     ?>
 
     <!-- Carousel
     ================================================== -->
@@ -67,11 +75,11 @@
     
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="../css/frozen.jpg" alt="First slide">
+          <img src="../css/walkingdead2.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1><?php echo $array[1] ?></h1>
-              <p>Frozen spoiler</p>
+              <p>Walking Dead Season 2 spoiler</p>
              
             </div>
           </div>
@@ -90,7 +98,7 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
-          <p> <?php echo $array[2] ?></p>
+          <p><?php echo $array[2] ?></p>
 	</div>
       </div>
 

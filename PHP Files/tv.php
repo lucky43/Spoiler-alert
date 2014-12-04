@@ -120,7 +120,7 @@
           <h2><?php echo $tv[0] ?></h2>
 
           <p>Sheriff Deputy Rick Grimes is shot in a fight against criminals. He goes into a coma for some period of time. When he wakes up, something is clearly amiss. Cue zombie apocalypse.</p>
-          <p><a class="btn btn-default" href="walkingdead1.html" role="button">Spoil &raquo;</a></p>
+          <p><a class="btn btn-default" href="WD1.php" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="../css/walkingdead2.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
@@ -128,14 +128,14 @@
           <h2><?php echo $tv2[0] ?></h2>
 
           <p>he second season begins with Rick and his group of survivors leaving Atlanta. They decide Fort Benning will be their next destination. Along the way, they encounter a traffic jam</p>
-          <p><a class="btn btn-default" href="walkingdead2.html" role="button">Spoil &raquo;</a></p>
+          <p><a class="btn btn-default" href="WD2.php" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="../css/walkingdead3.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2><?php echo $tv3[0] ?></h2>
 
           <p>Season 3 starts 8 and a half months after they escaped the farm, Lori being in the final days of her pregnancy. They discover a deserted prison and, while clearing it of walkers, Hershel is bitten by his leg.</p>
-          <p><a class="btn btn-default" href="walkingdead3.html" role="button">Spoil &raquo;</a></p>
+          <p><a class="btn btn-default" href="WD3.php" role="button">Spoil &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 

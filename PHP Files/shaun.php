@@ -45,9 +45,9 @@
               <ul class="nav navbar-nav">
 
                 <li><a href="movies.php">Movies</a></li>
-                <li><a href="tv.html">TV</a></li>
-                <li><a href='classics.html'>Classics</a></li>
-                <li><a href='videogames.html'>Video Games</a></li>
+                <li><a href="tv.php">TV</a></li>
+                <li><a href='classics.php'>Classics</a></li>
+                <li><a href='videogames.php'>Video Games</a></li>
             
               </ul>
             </div>
