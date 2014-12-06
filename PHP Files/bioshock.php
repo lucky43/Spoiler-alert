@@ -70,9 +70,10 @@
 
      <?php 
      /** *Grab Bioshock info */
-       $query = "select * from videogames where id =1"; 
-       $result=mysql_query($query); 
-       $bio = mysql_fetch_array($result); 
+       $bio_query = "select * from videogames where id =1"; 
+       $bio_result=mysql_query($bio_query); 
+       /** * array of info for bioshock */
+       $bio = mysql_fetch_array($bio_result); 
        ?>
      
      

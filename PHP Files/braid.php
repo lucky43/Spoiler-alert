@@ -71,9 +71,10 @@
 
      <?php 
      /** *Grab Braid info */
-       $query = "select * from videogames where id =3"; 
-       $result=mysql_query($query); 
-       $braid = mysql_fetch_array($result); 
+       $braid_query = "select * from videogames where id =3"; 
+       $braid_result=mysql_query($braid_query); 
+       /** array of info for Braid */
+       $braid = mysql_fetch_array($braid_result); 
        ?>
      
      

@@ -63,9 +63,10 @@
     </div>
      <?php 
      /** Get info for Frozen */
-     $query = "select * from Movies where id =3"; 
-     $result=mysql_query($query) ?>
-     $frozen = mysql_fetch_array($result); ?>
+     $frozen_query  = "select * from Movies where id =3"; 
+     $frozen_result =mysql_query($frozen_query);
+     /** Array of Frozen info */
+     $frozen = mysql_fetch_array($frozen_result); ?>
 
     <!-- Carousel
     ================================================== -->

@@ -64,9 +64,10 @@
     </div>
      <?php 
      /** Select info for season 3 */
-     $query = "select * from tv where id =3"; 
-     $result=mysql_query($query);
-     $array = mysql_fetch_array($result); 
+     $wd3_query = "select * from tv where id =3"; 
+     $wd3_result=mysql_query($wd3_query);
+     /** array of info for season 3 */
+     $wd3 = mysql_fetch_array($wd3_result); 
      ?>
 
     <!-- Carousel
@@ -79,7 +80,7 @@
           <img src="../css/walkingdead3.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1><?php echo $array[1] ?></h1>
+              <h1><?php echo $wd3[1] ?></h1>
               <p>Walking Dead Season 3 spoiler</p>
              
             </div>
@@ -99,7 +100,7 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
-          <p><?php echo $array[2] ?></p>
+          <p><?php echo $wd3[2] ?></p>
 	</div>
       </div>
 

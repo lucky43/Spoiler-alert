@@ -1,7 +1,9 @@
 <?php require_once 'config.php';
 /**
 *@file
-*@brief Contains Movie Spoilers 
+*@brief Contains Movie Spoilers.
+*
+*To add different spoilers, change the id of one of the querys, the picture, and the short synopsis. 
 */
 
 ?>
@@ -36,9 +38,7 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <?php /**
- * This section is where we grab the spoilers from the movies table
- */
+    <?php 
  
  /** Selects title from Movie database */
  $query = "select title from movies where id =1";   

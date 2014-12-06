@@ -1,8 +1,9 @@
 <?php require_once 'config.php';
 /**
  *@file
- *@brief This page is where we grab the Title of 3 spoilers from the tv table
- * 
+ *@brief This page is where we grab the Title of 3 spoilers from the tv table.
+ *
+ * To add different spoilers, change the id of one of the querys, the picture, and the short synopsis.
  */
 ?>
 <!DOCTYPE html>

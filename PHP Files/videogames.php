@@ -86,7 +86,9 @@
      <body>
     <?php /**
     *@file
-    *@brief This section is where we grab the titles from the videogames table
+    *@brief This section is where we grab the titles from the videogames table.
+    *
+    *To add different spoilers, change the id of one of the querys, the picture, and the short synopsis.
     */
  
   /** Selects title from videogame table */

@@ -1,8 +1,5 @@
 <?php require_once 'config.php';
-/**
-*@file
-*@brief Contains Classic Spoilers 
-*/
+
 ?>
 <!--classics.html-->
 
@@ -90,7 +87,10 @@
     <!-- Wrap the rest of the page in another container to center all the content. -->
 <?php 
 /**
- * This section is where we grab the spoilers from the classics table
+ *@file
+ *@brief This section is where we grab the spoilers from the classics table.
+ *
+ *To add different spoilers, change the id of one of the querys.
  */
  $query = "select * from classics where id =1"; 
  $result=mysql_query($query);

@@ -69,9 +69,10 @@
       <!-- Indicators -->
      <?php 
      /** Get fight club info */
-      $query = "select * from Movies where id =1"; 
-      $result=mysql_query($query);
-      $fight = mysql_fetch_array($result); 
+      $fight_query = "select * from Movies where id =1"; 
+      $fight_result=mysql_query($fight_query);
+      /** array of info for fightclub */
+      $fight = mysql_fetch_array($fight_result); 
       ?>
 
       

@@ -65,9 +65,10 @@
      /**
      *get shaun of the dead info
      */
-      $query = "select * from Movies where id =4"; 
-      $result=mysql_query($query) 
-      $shaun = mysql_fetch_array($result); 
+      $shaun_query = "select * from Movies where id =4"; 
+      $shaun_result=mysql_query($shaun_query);
+      /** array of info for shaun of the dead */ 
+      $shaun = mysql_fetch_array($shaun_result); 
       ?>
 
     <!-- Carousel

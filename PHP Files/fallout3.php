@@ -72,9 +72,10 @@
 
      <?php 
      /** *Grab Fallout 3 info */
-       $query = "select * from videogames where id =2"; 
-       $result=mysql_query($query); 
-       $fall = mysql_fetch_array($result); 
+       $fall_query = "select * from videogames where id =2"; 
+       $fall_result=mysql_query($fall_query); 
+       /** array of info for Fallout 3 */
+       $fall = mysql_fetch_array($fall_result); 
        ?>
      
      
