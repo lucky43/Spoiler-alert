@@ -9,3 +9,6 @@ The spoilers are then taken and inserted into our database using the mysql comma
 The webpage files hold the html template files.
 
 Once the html files are created they are made into php files which allows us to query our database and get the spoiler information.
+
+
+To build and run this on a local machine you must have MAMP of LAMP installed. Then use the sql commands to populate the database and be sure the php files are in the proper place. We hope to have this on a server soon!
